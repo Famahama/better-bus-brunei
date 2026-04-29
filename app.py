@@ -211,7 +211,6 @@ details summary { cursor: pointer; color: var(--muted); font-size: 0.85rem; }
 # ── Load data ─────────────────────────────────────────────────────────────────
 GTFS_DIR = os.path.join(os.path.dirname(__file__), "gtfs_output")
 
-@st.cache_data
 def load_data():
     stops      = pd.read_csv(os.path.join(GTFS_DIR, "stops.txt"))
     routes     = pd.read_csv(os.path.join(GTFS_DIR, "routes.txt"))
@@ -290,16 +289,23 @@ def find_route(origin_clean, dest_clean):
 
     results = []
 
+    def make_segment(stops, from_idx, to_idx):
+        """Return (segment, stop_count) in travel direction, regardless of trip order."""
+        lo, hi = min(from_idx, to_idx), max(from_idx, to_idx)
+        seg = stops[lo:hi+1]
+        if from_idx > to_idx:
+            seg = list(reversed(seg))
+        return seg, hi - lo
+
     # ── Direct routes ──
     for trip_id in origin_trip_keys:
         if trip_id in dest_trip_keys:
             o = origin_trip_keys[trip_id]
-            d = dest_trip_keys[trip_id]
             stops = trip_stops[trip_id]
             o_idx = next((i for i, s in enumerate(stops) if s["stop_name_clean"] == origin_clean), None)
             d_idx = next((i for i, s in enumerate(stops) if s["stop_name_clean"] == dest_clean), None)
-            if o_idx is not None and d_idx is not None and o_idx < d_idx:
-                segment = stops[o_idx:d_idx+1]
+            if o_idx is not None and d_idx is not None and o_idx != d_idx:
+                segment, count = make_segment(stops, o_idx, d_idx)
                 results.append({
                     "type": "direct",
                     "legs": [{
@@ -309,7 +315,7 @@ def find_route(origin_clean, dest_clean):
                         "full_route": o["full_route"],
                         "board":  stops[o_idx]["stop_name"],
                         "alight": stops[d_idx]["stop_name"],
-                        "stops_count": d_idx - o_idx,
+                        "stops_count": count,
                         "segment": segment,
                     }]
                 })
@@ -318,21 +324,17 @@ def find_route(origin_clean, dest_clean):
         return results[:3]
 
     # ── Transfer routes (1 change) ──
+    # Collect all stops reachable from origin (either direction on each trip)
     origin_all_stops = set()
     for trip_id, o in origin_trip_keys.items():
-        stops = trip_stops[trip_id]
-        o_idx = next((i for i, s in enumerate(stops) if s["stop_name_clean"] == origin_clean), None)
-        if o_idx is not None:
-            for s in stops[o_idx:]:
-                origin_all_stops.add(s["stop_name_clean"])
+        for s in trip_stops[trip_id]:
+            origin_all_stops.add(s["stop_name_clean"])
 
+    # Collect all stops from which destination is reachable (either direction)
     dest_all_stops = set()
     for trip_id, d in dest_trip_keys.items():
-        stops = trip_stops[trip_id]
-        d_idx = next((i for i, s in enumerate(stops) if s["stop_name_clean"] == dest_clean), None)
-        if d_idx is not None:
-            for s in stops[:d_idx+1]:
-                dest_all_stops.add(s["stop_name_clean"])
+        for s in trip_stops[trip_id]:
+            dest_all_stops.add(s["stop_name_clean"])
 
     transfer_stops = origin_all_stops & dest_all_stops
 
@@ -344,7 +346,7 @@ def find_route(origin_clean, dest_clean):
             stops1 = trip_stops[trip_id1]
             o_idx = next((i for i, s in enumerate(stops1) if s["stop_name_clean"] == origin_clean), None)
             t_idx = next((i for i, s in enumerate(stops1) if s["stop_name_clean"] == transfer_clean), None)
-            if o_idx is None or t_idx is None or o_idx >= t_idx:
+            if o_idx is None or t_idx is None or o_idx == t_idx:
                 continue
 
             for trip_id2, d in dest_trip_keys.items():
@@ -353,9 +355,11 @@ def find_route(origin_clean, dest_clean):
                 stops2 = trip_stops[trip_id2]
                 t2_idx = next((i for i, s in enumerate(stops2) if s["stop_name_clean"] == transfer_clean), None)
                 d_idx  = next((i for i, s in enumerate(stops2) if s["stop_name_clean"] == dest_clean), None)
-                if t2_idx is None or d_idx is None or t2_idx >= d_idx:
+                if t2_idx is None or d_idx is None or t2_idx == d_idx:
                     continue
 
+                seg1, count1 = make_segment(stops1, o_idx, t_idx)
+                seg2, count2 = make_segment(stops2, t2_idx, d_idx)
                 results.append({
                     "type": "transfer",
                     "legs": [
@@ -366,8 +370,8 @@ def find_route(origin_clean, dest_clean):
                             "full_route": o["full_route"],
                             "board":  stops1[o_idx]["stop_name"],
                             "alight": stops1[t_idx]["stop_name"],
-                            "stops_count": t_idx - o_idx,
-                            "segment": stops1[o_idx:t_idx+1],
+                            "stops_count": count1,
+                            "segment": seg1,
                         },
                         {
                             "trip_id":   trip_id2,
@@ -376,8 +380,8 @@ def find_route(origin_clean, dest_clean):
                             "full_route": d["full_route"],
                             "board":  stops2[t2_idx]["stop_name"],
                             "alight": stops2[d_idx]["stop_name"],
-                            "stops_count": d_idx - t2_idx,
-                            "segment": stops2[t2_idx:d_idx+1],
+                            "stops_count": count2,
+                            "segment": seg2,
                         }
                     ]
                 })
