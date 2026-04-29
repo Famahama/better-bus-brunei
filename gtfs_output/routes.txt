@@ -1,0 +1,22 @@
+route_id,route_short_name,route_long_name,route_type
+01A,01A,Mabohai-Airport Lama-Mall Gadong-Jame'Asr-RIPAS-Sumbiling,3
+01C,01C,Sumbiling-RIPAS-Jame'Asr-Mall Gadong-Airport Lama-Mabohai,3
+20,20,Kiulap Commercial-Jame' Asr-Mall Gadong-Batu Bersurat,3
+21,21,Kiarong-Mata2-Kg. Tungku-IPA-Batu Bersurat-J. Gadong,3
+22,22,Tamu Gadong-UNISSA-J. Tungku-Rimba-ITB-UBD-JIS,3
+23,23,J. Kumbang Pasang-Airport-J. Psr. Berakas-RPN Lambak Kiri-Berakas Kem,3
+24,24,J. Kumbang Pasang-J. Berakas-Airport-Madang-RPN Lambak Kanan,3
+34,34,Airport Lama-Burong Pingai-Times Sq-Airport-Manggis2-Delima Jaya,3
+35,35,J. Kianggeh-J. Kebangsaan-Immigration-Diplomatic-J. Sg Akar,3
+36,36,Mabohai-Immigration-Stadium-Pulaie-J. Kebangsaan Lama-Delima 1-J. Muara-J. Berakas,3
+37,37,J. Subok-J. Sg Akar-J. Muara (Salambigar→Kapok)-Kg Sabun-Pekan Muara,3
+38,38,J. Kumbang Pasang-Times Sq/Airport Mall-Airport-J. Muara-Pekan Muara,3
+39,39,J. Kota Batu-Museum-Mangrove resort-RPN Kg Mentiri-Kg Kapok Muara,3
+42,42,J. Tutong[Batu 1→Sengkurong]-J. Mulaut-L. Manis [Mulaut-Pengkalan Batu]-J. K. Lurah,3
+44,44,J. Tutong[Batu 1→Bunut]-J. Bengkurong Masin-Kg Junjongan-J. K. Lurah,3
+45,45,J. Tutong[Batu 1→T. Meradun-Sengkurong]-J. Mulaut/L. Manis (Mulaut-Masin),3
+49,49,J. Tutong[Batu 1→Bunut]-Mulaut Ban (3)-(4)-(2)-(1)-(5)-(6)-Bebatik Kilanas,3
+55,55,J. Gadong-Jangsak-J. Tutong-Sengkurong-J. Jerudong,3
+56,56,J. Tutong-Tg Bunut-Sengkurong-Katimahar-Kg Lugu,3
+57,57,Kiarong-Beribi-Katok B-Mata-Mata-RPN Kg Rimba-Empire,3
+58,58,J. Gadong-J. Tungku-Rimba-ITB-UBD-JIS-Empire Hotel,3
