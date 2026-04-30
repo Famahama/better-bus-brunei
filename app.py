@@ -400,16 +400,173 @@ def get_all_stops():
 
 all_stops = get_all_stops()
 
+# ── Translations ──────────────────────────────────────────────────────────────
+TRANSLATIONS = {
+    "English": {
+        "subtitle":        "Public bus route planner · Brunei-Muara & beyond",
+        "tab_plan":        "🗺️ Plan a Journey",
+        "tab_browse":      "📋 Browse Routes",
+        "origin":          "Origin",
+        "destination":     "Destination",
+        "select_stop":     "— Select stop —",
+        "swap":            "⇅  Swap",
+        "find_route":      "FIND ROUTE →",
+        "warn_select":     "Please select both an origin and destination stop.",
+        "warn_same":       "Origin and destination are the same stop.",
+        "no_route_1":      "No route found between",
+        "no_route_2":      "Try nearby stops or check spelling.",
+        "option":          "Option",
+        "direct":          "DIRECT ROUTE",
+        "transfer":        "1 TRANSFER",
+        "board_at":        "Board at",
+        "alight_at":       "Alight at",
+        "stops_along":     "{n} {noun} along the way",
+        "stop_singular":   "stop",
+        "stop_plural":     "stops",
+        "transfer_at":     "TRANSFER AT",
+        "show_stops":      "Show all stops · Leg {j} (Route {r})",
+        "select_route":    "Select Route",
+        "choose_route":    "— Choose a route —",
+        "route_label":     "Route",
+        "stops_total":     "stops total",
+    },
+    "Melayu": {
+        "subtitle":        "Perancang laluan bas awam · Brunei-Muara & sekitar",
+        "tab_plan":        "🗺️ Rancang Perjalanan",
+        "tab_browse":      "📋 Semak Laluan",
+        "origin":          "Asal",
+        "destination":     "Destinasi",
+        "select_stop":     "— Pilih perhentian —",
+        "swap":            "⇅  Tukar",
+        "find_route":      "CARI LALUAN →",
+        "warn_select":     "Sila pilih perhentian asal dan destinasi.",
+        "warn_same":       "Asal dan destinasi adalah perhentian yang sama.",
+        "no_route_1":      "Tiada laluan ditemui antara",
+        "no_route_2":      "Cuba perhentian berdekatan atau semak ejaan.",
+        "option":          "Pilihan",
+        "direct":          "LALUAN TERUS",
+        "transfer":        "1 PERTUKARAN",
+        "board_at":        "Naik di",
+        "alight_at":       "Turun di",
+        "stops_along":     "{n} {noun} sepanjang perjalanan",
+        "stop_singular":   "perhentian",
+        "stop_plural":     "perhentian",
+        "transfer_at":     "PERTUKARAN DI",
+        "show_stops":      "Tunjukkan semua perhentian · Kaki {j} (Laluan {r})",
+        "select_route":    "Pilih Laluan",
+        "choose_route":    "— Pilih laluan —",
+        "route_label":     "Laluan",
+        "stops_total":     "perhentian keseluruhan",
+    },
+    "中文": {
+        "subtitle":        "公共巴士路线规划 · 文莱及周边地区",
+        "tab_plan":        "🗺️ 规划行程",
+        "tab_browse":      "📋 浏览路线",
+        "origin":          "出发地",
+        "destination":     "目的地",
+        "select_stop":     "— 请选择站点 —",
+        "swap":            "⇅  互换",
+        "find_route":      "查找路线 →",
+        "warn_select":     "请选择出发站和目的站。",
+        "warn_same":       "出发站和目的站相同。",
+        "no_route_1":      "未找到路线，出发站与目的站之间：",
+        "no_route_2":      "请尝试附近站点或检查拼写。",
+        "option":          "方案",
+        "direct":          "直达路线",
+        "transfer":        "需转乘1次",
+        "board_at":        "上车于",
+        "alight_at":       "下车于",
+        "stops_along":     "途经 {n} 个{noun}",
+        "stop_singular":   "站",
+        "stop_plural":     "站",
+        "transfer_at":     "转乘于",
+        "show_stops":      "显示所有站点 · 第{j}段（路线 {r}）",
+        "select_route":    "选择路线",
+        "choose_route":    "— 选择路线 —",
+        "route_label":     "路线",
+        "stops_total":     "个站点",
+    },
+    "বাংলা": {
+        "subtitle":        "পাবলিক বাস রুট পরিকল্পনাকারী · ব্রুনাই-মুয়ারা ও তার বাইরে",
+        "tab_plan":        "🗺️ যাত্রা পরিকল্পনা",
+        "tab_browse":      "📋 রুট ব্রাউজ করুন",
+        "origin":          "উৎপত্তিস্থল",
+        "destination":     "গন্তব্য",
+        "select_stop":     "— স্টপ নির্বাচন করুন —",
+        "swap":            "⇅  অদলবদল",
+        "find_route":      "রুট খুঁজুন →",
+        "warn_select":     "অনুগ্রহ করে উৎস ও গন্তব্য স্টপ নির্বাচন করুন।",
+        "warn_same":       "উৎস ও গন্তব্য একই স্টপ।",
+        "no_route_1":      "মধ্যে কোনো রুট পাওয়া যায়নি",
+        "no_route_2":      "কাছাকাছি স্টপ চেষ্টা করুন বা বানান পরীক্ষা করুন।",
+        "option":          "বিকল্প",
+        "direct":          "সরাসরি রুট",
+        "transfer":        "১টি ট্রান্সফার",
+        "board_at":        "উঠুন",
+        "alight_at":       "নামুন",
+        "stops_along":     "পথে {n}টি {noun}",
+        "stop_singular":   "স্টপ",
+        "stop_plural":     "স্টপ",
+        "transfer_at":     "ট্রান্সফার করুন",
+        "show_stops":      "সব স্টপ দেখুন · লেগ {j} (রুট {r})",
+        "select_route":    "রুট নির্বাচন করুন",
+        "choose_route":    "— রুট বেছে নিন —",
+        "route_label":     "রুট",
+        "stops_total":     "স্টপ মোট",
+    },
+    "हिन्दी": {
+        "subtitle":        "सार्वजनिक बस रूट योजनाकार · ब्रुनेई-मुआरा और आगे",
+        "tab_plan":        "🗺️ यात्रा की योजना",
+        "tab_browse":      "📋 रूट ब्राउज़ करें",
+        "origin":          "उद्गम",
+        "destination":     "गंतव्य",
+        "select_stop":     "— स्टॉप चुनें —",
+        "swap":            "⇅  बदलें",
+        "find_route":      "रूट खोजें →",
+        "warn_select":     "कृपया उद्गम और गंतव्य दोनों स्टॉप चुनें।",
+        "warn_same":       "उद्गम और गंतव्य एक ही स्टॉप हैं।",
+        "no_route_1":      "के बीच कोई रूट नहीं मिला",
+        "no_route_2":      "आस-पास के स्टॉप आज़माएं या वर्तनी जांचें।",
+        "option":          "विकल्प",
+        "direct":          "सीधा रूट",
+        "transfer":        "1 स्थानांतरण",
+        "board_at":        "चढ़ें",
+        "alight_at":       "उतरें",
+        "stops_along":     "रास्ते में {n} {noun}",
+        "stop_singular":   "स्टॉप",
+        "stop_plural":     "स्टॉप",
+        "transfer_at":     "यहाँ ट्रांसफर करें",
+        "show_stops":      "सभी स्टॉप दिखाएं · लेग {j} (रूट {r})",
+        "select_route":    "रूट चुनें",
+        "choose_route":    "— एक रूट चुनें —",
+        "route_label":     "रूट",
+        "stops_total":     "स्टॉप कुल",
+    },
+}
+
 # ── UI ────────────────────────────────────────────────────────────────────────
-st.markdown("""
+
+# Language selector (top-right via columns)
+lang_col, _ = st.columns([2, 5])
+with lang_col:
+    selected_lang = st.selectbox(
+        "🌐",
+        list(TRANSLATIONS.keys()),
+        key="lang",
+        label_visibility="collapsed",
+    )
+
+t = TRANSLATIONS[selected_lang]
+
+st.markdown(f"""
 <div class="hero">
 <h1>🚌 Better Bus Brunei</h1>
-<p>Public bus route planner · Brunei-Muara & beyond</p>
+<p>{t["subtitle"]}</p>
 </div>
 """, unsafe_allow_html=True)
 
 # ── Session state for swap ────────────────────────────────────────────────────
-_opts = ["— Select stop —"] + all_stops
+_opts = [t["select_stop"]] + all_stops
 
 def swap_stops():
     o = st.session_state.get("origin_sel", _opts[0])
@@ -418,27 +575,27 @@ def swap_stops():
     st.session_state["dest_sel"] = o
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
-tab1, tab2 = st.tabs(["🗺️ Plan a Journey", "📋 Browse Routes"])
+tab1, tab2 = st.tabs([t["tab_plan"], t["tab_browse"]])
 
 with tab1:
-    st.markdown('<div class="section-label">Origin</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-label">{t["origin"]}</div>', unsafe_allow_html=True)
     origin = st.selectbox("", _opts, key="origin_sel", label_visibility="collapsed")
 
     col_swap, _ = st.columns([2, 6])
     with col_swap:
-        st.button("⇅  Swap", on_click=swap_stops, use_container_width=True)
+        st.button(t["swap"], on_click=swap_stops, use_container_width=True)
 
-    st.markdown('<div class="section-label">Destination</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-label">{t["destination"]}</div>', unsafe_allow_html=True)
     dest = st.selectbox("", _opts, key="dest_sel", label_visibility="collapsed")
 
     st.markdown("<br>", unsafe_allow_html=True)
-    search = st.button("FIND ROUTE →", use_container_width=True)
+    search = st.button(t["find_route"], use_container_width=True)
 
     if search:
-        if origin.startswith("—") or dest.startswith("—"):
-            st.warning("Please select both an origin and destination stop.")
+        if origin == t["select_stop"] or dest == t["select_stop"]:
+            st.warning(t["warn_select"])
         elif origin == dest:
-            st.warning("Origin and destination are the same stop.")
+            st.warning(t["warn_same"])
         else:
             origin_clean = origin.strip().lower()
             dest_clean   = dest.strip().lower()
@@ -447,23 +604,22 @@ with tab1:
             if not results:
                 st.markdown(
                     f'<div class="result-card"><div class="no-route">'
-                    f'No route found between<br>'
+                    f'{t["no_route_1"]}<br>'
                     f'<strong>{origin}</strong> and <strong>{dest}</strong>.<br><br>'
-                    f'<span style="font-size:0.75rem">Try nearby stops or check spelling.</span>'
+                    f'<span style="font-size:0.75rem">{t["no_route_2"]}</span>'
                     f'</div></div>',
                     unsafe_allow_html=True,
                 )
             else:
                 for i, result in enumerate(results):
                     legs  = result["legs"]
-                    label = "DIRECT ROUTE" if result["type"] == "direct" else "1 TRANSFER"
+                    label = t["direct"] if result["type"] == "direct" else t["transfer"]
 
-                    # Build HTML without leading whitespace (prevents Markdown treating
-                    # indented lines as code blocks)
-                    parts = [f'<div class="result-card"><h3>Option {i+1} · {label}</h3>']
+                    parts = [f'<div class="result-card"><h3>{t["option"]} {i+1} · {label}</h3>']
                     for j, leg in enumerate(legs):
                         total = leg["stops_count"]
-                        noun  = "stop" if total == 1 else "stops"
+                        noun  = t["stop_singular"] if total == 1 else t["stop_plural"]
+                        stops_text = t["stops_along"].format(n=total, noun=noun)
                         parts.append(
                             f'<div class="step">'
                             f'<div class="step-num">{j+1}</div>'
@@ -472,9 +628,9 @@ with tab1:
                             f'<span class="route-badge">{leg["route"]}</span> {leg["direction"]}'
                             f'</div>'
                             f'<div class="step-sub">'
-                            f'Board at <strong>{leg["board"]}</strong> &middot; '
-                            f'Alight at <strong>{leg["alight"]}</strong><br>'
-                            f'{total} {noun} along the way'
+                            f'{t["board_at"]} <strong>{leg["board"]}</strong> &middot; '
+                            f'{t["alight_at"]} <strong>{leg["alight"]}</strong><br>'
+                            f'{stops_text}'
                             f'</div>'
                             f'</div>'
                             f'</div>'
@@ -483,7 +639,7 @@ with tab1:
                             xfer = legs[j + 1]["board"].upper()
                             parts.append(
                                 f'<div style="margin-left:2rem;margin-bottom:0.75rem">'
-                                f'<span class="transfer-tag">&#8596; TRANSFER AT {xfer}</span>'
+                                f'<span class="transfer-tag">&#8596; {t["transfer_at"]} {xfer}</span>'
                                 f'</div>'
                             )
                     parts.append('</div>')
@@ -491,7 +647,8 @@ with tab1:
 
                     # Expandable stop list
                     for j, leg in enumerate(legs):
-                        with st.expander(f"Show all stops · Leg {j+1} (Route {leg['route']})"):
+                        label_exp = t["show_stops"].format(j=j+1, r=leg["route"])
+                        with st.expander(label_exp):
                             rows = "".join(
                                 f'<div class="stop-item">'
                                 f'<span class="stop-name-text">{s["stop_name"]}</span>'
@@ -505,9 +662,9 @@ with tab1:
                             )
 
 with tab2:
-    st.markdown('<div class="section-label">Select Route</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="section-label">{t["select_route"]}</div>', unsafe_allow_html=True)
     route_numbers = sorted(df["route_short_name"].unique().tolist())
-    selected_route = st.selectbox("", ["— Choose a route —"] + route_numbers, label_visibility="collapsed")
+    selected_route = st.selectbox("", [t["choose_route"]] + route_numbers, label_visibility="collapsed")
 
     if not selected_route.startswith("—"):
         route_df = df[df["route_short_name"] == selected_route].sort_values("stop_sequence")
@@ -517,13 +674,13 @@ with tab2:
 
         st.markdown(
             f'<div class="result-card">'
-            f'<h3>Route {selected_route}</h3>'
+            f'<h3>{t["route_label"]} {selected_route}</h3>'
             f'<div style="margin-bottom:0.5rem">'
             f'<span class="route-badge">{selected_route}</span>'
             f'<strong style="color:var(--text)">{direction}</strong>'
             f'</div>'
             f'<div style="font-size:0.8rem;color:var(--muted);margin-bottom:1rem">{full_name}</div>'
-            f'<div style="font-size:0.8rem;color:var(--muted)">{total_stops} stops total</div>'
+            f'<div style="font-size:0.8rem;color:var(--muted)">{total_stops} {t["stops_total"]}</div>'
             f'</div>',
             unsafe_allow_html=True,
         )
@@ -545,6 +702,16 @@ st.markdown("""
 <hr>
 <div style="text-align:center; color:var(--muted); font-size:0.75rem; padding-bottom:2rem">
 Data sourced from JPD Brunei · 21 routes · 676 stops (GTFS)<br>
-<span style="font-family:'Space Mono',monospace">better-bus-brunei v0.2</span>
+<span style="font-family:'Space Mono',monospace">better-bus-brunei v0.2</span><br><br>
+<span style="font-size:0.8rem">
+<a href="https://www.instagram.com/famahamaf/" target="_blank"
+   style="color:var(--yellow);text-decoration:none;margin-right:1rem">
+   📸 Instagram
+</a>
+<a href="https://www.linkedin.com/in/fahmi-rosli-46709b115/" target="_blank"
+   style="color:var(--yellow);text-decoration:none">
+   💼 LinkedIn
+</a>
+</span>
 </div>
 """, unsafe_allow_html=True)

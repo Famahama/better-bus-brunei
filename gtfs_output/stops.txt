@@ -20,6 +20,31 @@ stop_id,stop_name,stop_lat,stop_lon
 01A_19,J. RIPAS (Mile 1 - Batu 1),0.0,0.0
 01A_20,J. RIPAS → Sumbiling,0.0,0.0
 01A_21,J. SOAS (Royal Regalia),0.0,0.0
+01C_1,BSB Bus Terminal,0.0,0.0
+01C_2,J. Bendahara (Royal Regalia),0.0,0.0
+01C_3,Sumbiling (Fire & Rescue),0.0,0.0
+01C_4,J. RIPAS Mahkamah (Court),0.0,0.0
+01C_5,J. RIPAS (Sri Complex/Laksamana),0.0,0.0
+01C_6,J. RIPAS (Mile 1 - Batu 1),0.0,0.0
+01C_7,J. Putera Al-Muhtadee Billah (RIPAS),0.0,0.0
+01C_8,J. Kiulap (Spg 107),0.0,0.0
+01C_9,J. Kiulap (Embassy Japan@Spg 119),0.0,0.0
+01C_10,Masjid Jame'Asr (Spg 127),0.0,0.0
+01C_11,J. Pasar Baharu (The Arch),0.0,0.0
+01C_12,Tamu Gadong (Gadong Market),0.0,0.0
+01C_13,Mall Gadong (Rizqun Hotel),0.0,0.0
+01C_14,Centrepoint Hotel,0.0,0.0
+01C_15,J. Gadong (Traffic Light Gadong),0.0,0.0
+01C_16,J. Gadong (Under SHHB Bypass/Shell Menglait),0.0,0.0
+01C_17,J. Gadong (Jerambak / Riverview),0.0,0.0
+01C_18,Airport Lama (Building - JKR),0.0,0.0
+01C_19,Airport Lama (TelBru/Dental Clinic/Fire Rescue),0.0,0.0
+01C_20,J. Menteri Besar (Immigration / Labour),0.0,0.0
+01C_21,J. Menteri Besar (Custom / KHEU / Audit),0.0,0.0
+01C_22,J. Kebangsaan,0.0,0.0
+01C_23,J. Kebangsaan (Mabohai / SupaSave),0.0,0.0
+01C_24,J. Kianggeh (Terrace / Radisson),0.0,0.0
+01C_25,J. Bendahara (Royal Regalia),0.0,0.0
 20_1,BSB Bus Terminal,0.0,0.0
 20_2,J. Bendahara (Royal Regalia),0.0,0.0
 20_3,Sumbiling (Fire & Rescue),0.0,0.0
@@ -42,636 +67,621 @@ stop_id,stop_name,stop_lat,stop_lon
 20_20,J. Simpang (SOAS - St Andrews),0.0,0.0
 20_21,J. Kianggeh (Terrace / Radisson),0.0,0.0
 20_22,J. Bendahara (Royal Regalia),0.0,0.0
-01C_1,BSB Bus Terminal,0.0,0.0
-01C_2,J. Bendahara (Royal Regalia),0.0,0.0
-01C_3,J. Bendahara (Royal Regalia),0.0,0.0
-01C_4,Sumbiling (Fire & Rescue),0.0,0.0
-01C_5,J. Kianggeh (Terrace / Radisson),0.0,0.0
-01C_6,J. RIPAS (Mahkamah (Court)),0.0,0.0
-01C_7,J. Kebangsaan (Mabolhai / SupaSave),0.0,0.0
-01C_8,J. RIPAS (Sri Complex/Laksamana),0.0,0.0
-01C_9,J. Kebangsaan,0.0,0.0
-01C_10,J. RIPAS (Mile 1 - Batu 1),0.0,0.0
-01C_11,J. Putera Al-Muhtadee Billah (RIPAS),0.0,0.0
-01C_12,J. Menteri Besar (Custom / KHEU / Audit),0.0,0.0
-01C_13,J. Menteri Besar (Immigration / Labour),0.0,0.0
-01C_14,Centrepoint Hotel,0.0,0.0
-01C_15,Mall Gadong (Rizqun Hotel),0.0,0.0
-01C_16,J. Gadong (Traffic Light Gadong),0.0,0.0
-01C_17,Tamu Gadong (Gadong Market),0.0,0.0
-01C_18,J. Gadong (Under SHHB Bypass/Shell Menglait),0.0,0.0
-01C_19,J. Pasar Baharu (The Arch),0.0,0.0
-01C_20,J. Gadong (Jerambak / Riverview),0.0,0.0
-01C_21,Masjid Jame' Asr (Spg 127),0.0,0.0
-01C_22,Airport Lama (Building - JKR),0.0,0.0
-01C_23,J. Kiulap (Embassy Japan@Spg 118),0.0,0.0
-01C_24,Airport Lama (TelBru/Dental Clinic/Fire Rescue),0.0,0.0
-01C_25,J. Kiulap (Spg 107),0.0,0.0
 21_1,BSB Bus Terminal,0.0,0.0
 21_2,J. SOAS (Royal Regalia),0.0,0.0
-21_3,J. Kianggeh (Terrace / Radisson),0.0,0.0
-21_4,Sumbiling (Fire & Rescue),0.0,0.0
-21_5,J. Simpang (SOAS),0.0,0.0
-21_6,J. RIPAS (Mahkamah (Court)),0.0,0.0
-21_7,J. Kumbang Pasang (STPRI),0.0,0.0
-21_8,Kiarong Complex (Via SHHB Highway),0.0,0.0
-21_9,J. Gadong (Jerambak / Riverview),0.0,0.0
-21_10,J. Date Ratna Kiarong (SR Kiarong),0.0,0.0
-21_11,J. Gadong (Shell Menglait),0.0,0.0
-21_12,J. Perindustrian Beribi (Sumbangsih & GHK),0.0,0.0
-21_13,J. Gadong (Under SHHB Bypass),0.0,0.0
-21_14,J. Gadong (Opp JPD),0.0,0.0
+21_3,Sumbiling (Fire & Rescue),0.0,0.0
+21_4,J. RIPAS Mahkamah (Court),0.0,0.0
+21_5,Kiarong Complex (Via SHHB Highway),0.0,0.0
+21_6,J. Dato Ratna Kiarong (SR. Kiarong),0.0,0.0
+21_7,J. Perindustrian Beribi (Sumbangsih & GHK),0.0,0.0
+21_8,J. Gadong (Opp JPD),0.0,0.0
+21_9,J. Gadong (Kompleks Warisan Mata2),0.0,0.0
+21_10,J. Mata-Mata (Spg 25/ Masjid Kg Mata2),0.0,0.0
+21_11,J. Mata-Mata (Spg 74/Perpindahan Mata2),0.0,0.0
+21_12,J. Mata-Mata (SR Pg Pekerma SDSB),0.0,0.0
+21_13,J. Mata-Mata (Spg 52),0.0,0.0
+21_14,J. Tungku (Spg 185 / 217 / 255),0.0,0.0
 21_15,J. Tungku (Spg 273 / 289 / 355),0.0,0.0
-21_16,J. Tungku (Spg 185 / 217 / 255),0.0,0.0
-21_17,J. Tungku (Masjid Kg Tungku),0.0,0.0
-21_18,J. Mata-Mata (Spg 52),0.0,0.0
-21_19,J. Penghubung Rimba (Spg 92 / 51),0.0,0.0
-21_20,J. Mata-Mata (SR Pg Pekerma 5DSB),0.0,0.0
-21_21,J. Penghubung Rimba (Spg Armada),0.0,0.0
-21_22,J. Mata-Mata (Spg 74/Perpindahan Mata2),0.0,0.0
-21_23,Pusat Kesihatan Gadong (IPA),0.0,0.0
-21_24,J. Mata-Mata (Spg 25 / Masjid Kg Mata2),0.0,0.0
-21_25,Batu Bersurat (Grand City),0.0,0.0
-21_26,J. Gadong (Kompleks Warisan Mata2),0.0,0.0
-21_27,J. Gadong (Traffic Light Gadong),0.0,0.0
+21_16,J. Tungku (Masjid Kg Tungku),0.0,0.0
+21_17,J. Penghubung Rimba (Spg 82 / 51),0.0,0.0
+21_18,J. Penghubung Rimba (Spg Armada),0.0,0.0
+21_19,Pusat Kesihatan Gadong (IPA),0.0,0.0
+21_20,Batu Bersurat (Grand City),0.0,0.0
+21_21,J. Gadong (Traffic Light Gadong),0.0,0.0
+21_22,J. Gadong (Under SHHB Bypass),0.0,0.0
+21_23,J. Gadong (Shell Menglait),0.0,0.0
+21_24,J. Gadong (Jerambak / Riverview),0.0,0.0
+21_25,J. Kumbang Pasang (STPRI),0.0,0.0
+21_26,J. Simpang (SOAS),0.0,0.0
+21_27,J. Kianggeh (Terrace / Radisson),0.0,0.0
 22_1,BSB Bus Terminal,0.0,0.0
 22_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
-22_3,J. Kianggeh (Terrace / Radisson),0.0,0.0
-22_4,J. Simpang (SOAS),0.0,0.0
-22_5,J. Simpang (SOAS),0.0,0.0
-22_6,Jejantas Kiulap (Kiulap Footbridge),0.0,0.0
-22_7,Jejantas Kiulap (Kiulap Footbridge),0.0,0.0
-22_8,J. Pasar Baharu (The Arch / Voctech),0.0,0.0
-22_9,J. Pasar Baharu (Tamu Gadong),0.0,0.0
-22_10,Maktab Duli PMHAMB / CSPS,0.0,0.0
-22_11,CSPS / Maktab Duli PMHAMB,0.0,0.0
-22_12,UNISSA / Business School,0.0,0.0
-22_13,UNISSA / Business School,0.0,0.0
-22_14,J. Tungku (Narcotic CB),0.0,0.0
-22_15,J. Tungku (Spg 162/Narcotic CB),0.0,0.0
-22_16,J. Tungku (Spg 162/185 Aprina),0.0,0.0
-22_17,J. Tungku (Masjid Kg Tungku/Spg 355/185),0.0,0.0
-22_18,J. Tungku (Spg 217 / 255),0.0,0.0
-22_19,RPN Kg Rimba (J. 60),0.0,0.0
-22_20,RPN Kg Rimba (J. 99 - SM Rimba 2),0.0,0.0
-22_21,RPN Kg Rimba (J. 3 - SR Rimba 2),0.0,0.0
-22_22,UBD Library / ITB,0.0,0.0
-22_23,Giant Rimba,0.0,0.0
-22_24,UBD (Core & Hostel/JIS),0.0,0.0
-22_25,RPN Kg Rimba (J. 82 - SR Rimba 1),0.0,0.0
-22_26,JIS/UBD (Hostel & Core),0.0,0.0
-22_27,RPN Kg Rimba (Gerai Aneka/SM Rimba 1),0.0,0.0
-22_28,RPN Kg Rimba (J. 3 - SR Rimba 2),0.0,0.0
-22_29,J. Penghubung Rimba (DeRimba),0.0,0.0
-22_30,RPN Kg Rimba (J. 99 / 2 / 60 / Glaat),0.0,0.0
-22_31,J. Penghubung Rimba (Spg 82/51/Armada),0.0,0.0
-22_32,Masjid Kg Tungku,0.0,0.0
-22_33,J. Penghubung Rimba (Spg 51 / 82 / 127),0.0,0.0
-22_34,J. Tungku (Spg 289 / 355),0.0,0.0
-22_35,J. Penghubung Rimba (Spg 51 / 82 / 127),0.0,0.0
+22_3,J. Simpang (SOAS),0.0,0.0
+22_4,Jejantas Kiulap (Kiulap Footbridge),0.0,0.0
+22_5,J. Pasar Baharu (The Arch / Voctech),0.0,0.0
+22_6,Maktab Duli PMHAMB / CSPS,0.0,0.0
+22_7,UNISSA / Business School,0.0,0.0
+22_8,J. Tungku (Narcotic CB),0.0,0.0
+22_9,J. Tungku (Spg 162/185 Aprina),0.0,0.0
+22_10,J. Tungku (Spg 217 / 255),0.0,0.0
+22_11,J. Tungku (Spg 289 / 355),0.0,0.0
+22_12,Masjid Kg Tungku,0.0,0.0
+22_13,J. Penghubung Rimba (Spg 82/51/Armada),0.0,0.0
+22_14,J. Penghubung Rimba (DeRimba),0.0,0.0
+22_15,RPN Kg Rimba (Gerai Aneka/SM Rimba 1),0.0,0.0
+22_16,RPN Kg Rimba (J. 82 - SR Rimba 1),0.0,0.0
+22_17,Giant Rimba,0.0,0.0
+22_18,RPN Kg Rimba (J. 3 - SR Rimba 2),0.0,0.0
+22_19,RPN Kg Rimba (J. 99 - SM Rimba 2),0.0,0.0
+22_20,RPN Kg Rimba (J. 60),0.0,0.0
+22_21,UBD Library / ITB,0.0,0.0
+22_22,UBD (Core & Hostel)/JIS,0.0,0.0
+22_23,JIS/UBD (Hostel & Core),0.0,0.0
+22_24,ITB / UBD Library,0.0,0.0
+22_25,RPN Kg Rimba (J. 3 - SR Rimba 2),0.0,0.0
+22_26,RPN Kg Rimba (J. 99 / 2 / 60 / Giant),0.0,0.0
+22_27,RPN Kg Rimba (SM Rimba 1),0.0,0.0
+22_28,J. Penghubung Rimba (DeRimba),0.0,0.0
+22_29,J. Penghubung Rimba (Spg 51 / 82 / 127),0.0,0.0
+22_30,J. Tungku (Masjid Kg Tungku/Spg 355/185),0.0,0.0
+22_31,J. Tungku (Spg 162/Narcotic CB),0.0,0.0
+22_32,UNISSA / Business School,0.0,0.0
+22_33,CSPS / Maktab Duli PMHAMB,0.0,0.0
+22_34,J. Pasar Baharu (Tamu Gadong),0.0,0.0
+22_35,Jejantas Kiulap (Kiulap Footbridge),0.0,0.0
+22_36,J. Simpang (SOAS),0.0,0.0
+22_37,J. Kianggeh (Terrace / Radisson),0.0,0.0
 23_1,BSB Bus Terminal,0.0,0.0
 23_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
-23_3,J. Kianggeh (Terrace / Radisson),0.0,0.0
-23_4,J. Simpang (SOAS),0.0,0.0
-23_5,J. Simpang (SOAS),0.0,0.0
-23_6,J. Kumbang Pasang (STPR / Riverview),0.0,0.0
-23_7,J. Simpang (STPRI),0.0,0.0
-23_8,J. Perdana Menteri (Masjid Ash-Saliheen),0.0,0.0
-23_9,J. Perdana Menteri (Masjid Ash-Saliheen),0.0,0.0
-23_10,J. Perdana Menteri (PMO),0.0,0.0
-23_11,J. Perdana Menteri (PMO),0.0,0.0
-23_12,J. Berakas (Bolkiah Kem),0.0,0.0
-23_13,J. Berakas (Off J. Stadium),0.0,0.0
-23_14,J. Berakas (Times Sq & Airport Mall),0.0,0.0
-23_15,J. Berakas (Shell TAIB),0.0,0.0
+23_3,J. Simpang (SOAS),0.0,0.0
+23_4,J. Kumbang Pasang (STPR / Riverview),0.0,0.0
+23_5,J. Perdana Menteri (Masjid Ash-Saliheen),0.0,0.0
+23_6,J. Perdana Menteri (PMO),0.0,0.0
+23_7,J. Berakas (Bolkiah Kem),0.0,0.0
+23_8,J. Berakas (Times Sq & Airport Mall),0.0,0.0
+23_9,Brunei International Airport,0.0,0.0
+23_10,J. Utama Berakas (SM Berakas),0.0,0.0
+23_11,J. Pasir Berakas (Kg Lambak),0.0,0.0
+23_12,J. Pasir Berakas (Masjid Lambak/SR Dato Mwangsa),0.0,0.0
+23_13,J. Pasir Berakas (Restoran Hayati),0.0,0.0
+23_14,RPN Lambak Kiri (Masjid L. Kiri/SM L. Kiri),0.0,0.0
+23_15,RPN Lambak Kiri (SR Dato Othman),0.0,0.0
 23_16,Berakas Kem,0.0,0.0
-23_17,RPN Lambak Kiri (SR Dato Othman),0.0,0.0
-23_18,RPN Lambak Kiri (Masjid L. Kiri/SM L. Kiri),0.0,0.0
-23_19,J. Pasir Berakas (Kg Lambak),0.0,0.0
-23_20,J. Pasir Berakas (Restoran Hayati),0.0,0.0
-23_21,J. Pasir Berakas (Restoran Hayati),0.0,0.0
-23_22,J. Pasir Berakas (SR Dato Matawangsa),0.0,0.0
-23_23,J. Pasir Berakas (Masjid Lambak/SR Dato Mwangsa),0.0,0.0
-23_24,J. Pasir Berakas (Masjid Lambak),0.0,0.0
-23_25,J. Pasir Berakas (Kg Lambak),0.0,0.0
-23_26,J. Utama Berakas (SM Berakas),0.0,0.0
-23_27,J. Utama Berakas (SM Berakas),0.0,0.0
-23_28,Brunei International Airport,0.0,0.0
-23_29,Brunei International Airport,0.0,0.0
+23_17,J. Pasir Berakas (Restoran Hayati),0.0,0.0
+23_18,J. Pasir Berakas (Kg Lambak),0.0,0.0
+23_19,J. Pasir Berakas (SR Dato Mahawangsa),0.0,0.0
+23_20,J. Pasir Berakas (Masjid Lambak),0.0,0.0
+23_21,J. Utama Berakas (SM Berakas),0.0,0.0
+23_22,Brunei International Airport,0.0,0.0
+23_23,J. Berakas (Shell TAIB),0.0,0.0
+23_24,J. Berakas (Off J. Stadium),0.0,0.0
+23_25,J. Perdana Menteri (PMO),0.0,0.0
+23_26,J. Perdana Menteri (Masjid Ash-Saliheen),0.0,0.0
+23_27,J. Simpang (STPRI),0.0,0.0
+23_28,J. Simpang (SOAS),0.0,0.0
+23_29,J. Kianggeh (Terrace / Radisson),0.0,0.0
 24_1,BSB Bus Terminal,0.0,0.0
 24_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
-24_3,J. Kianggeh (Terrace / Radisson),0.0,0.0
-24_4,J. Simpang (SOAS),0.0,0.0
-24_5,J. Simpang (SOAS),0.0,0.0
-24_6,J. Kumbang Pasang (STPRI / Riverview),0.0,0.0
-24_7,J. Kumbang Pasang (STPRI),0.0,0.0
-24_8,J. Perdana Menteri (Masjid Ash-Saliheen),0.0,0.0
-24_9,J. Perdana Menteri (Masjid Ash-Saliheen),0.0,0.0
-24_10,J. Perdana Menteri (PMO),0.0,0.0
-24_11,J. Perdana Menteri (PMO),0.0,0.0
-24_12,J. Berakas (Bolkiah Kem),0.0,0.0
-24_13,J. Berakas (Off J. Stadium),0.0,0.0
-24_14,J. Berakas (Times Sq & Airport Mall),0.0,0.0
-24_15,J. Berakas (Shell TAIB),0.0,0.0
-24_16,Brunei International Airport,0.0,0.0
+24_3,J. Simpang (SOAS),0.0,0.0
+24_4,J. Kumbang Pasang (STPRI / Riverview),0.0,0.0
+24_5,J. Perdana Menteri (Masjid ash-Saliheen),0.0,0.0
+24_6,J. Perdana Menteri (PMO),0.0,0.0
+24_7,J. Berakas (Bolkiah Kem),0.0,0.0
+24_8,J. Berakas (Times Sq & Airport Mall),0.0,0.0
+24_9,Brunei International Airport,0.0,0.0
+24_10,J. Utama Berakas (SM Berakas),0.0,0.0
+24_11,J. Madang (Spg 61/87/115/159),0.0,0.0
+24_12,RPN Lambak Kanan (J. 1-SM PAPH Masna),0.0,0.0
+24_13,RPN Lambak Kanan (J. 10 Selatan@J. 31),0.0,0.0
+24_14,RPN Lambak Kanan (J. 10 Selatan@J. 11),0.0,0.0
+24_15,RPN Lambak Kanan (J. 10 Utara@Masjid),0.0,0.0
+24_16,RPN Lambak Kanan (J. 10 Utara@Spg 169),0.0,0.0
 24_17,RPN Lambak Kanan (Dewan Kemasyarakatan),0.0,0.0
 24_18,RPN Lambak Kanan (J. 10 Utara@J. 77/49),0.0,0.0
-24_19,RPN Lambak Kanan (J. 10 Utara@Spg 169),0.0,0.0
-24_20,RPN Lambak Kanan (J. 10 Utara),0.0,0.0
-24_21,RPN Lambak Kanan (J. 10 Utara@Masjid),0.0,0.0
-24_22,RPN Lambak Kanan (J. 10 Selatan),0.0,0.0
-24_23,RPN Lambak Kanan (J. 1@SR Dato Marsal),0.0,0.0
-24_24,RPN Lambak Kanan (J. 10 Selatan@J. 11),0.0,0.0
-24_25,RPN Lambak Kanan (J. 10 Selatan@J. 31),0.0,0.0
-24_26,J. Madang (Kg Manggis),0.0,0.0
-24_27,RPN Lambak Kanan (J. 1-SM PAPH Masna),0.0,0.0
-24_28,J. Madang (Kg Madang),0.0,0.0
-24_29,J. Madang (Spg 61/87/115/159),0.0,0.0
-24_30,J. Utama Berakas (SM Berakas),0.0,0.0
-24_31,J. Utama Berakas (SM Berakas),0.0,0.0
-24_32,Brunei International Airport,0.0,0.0
+24_19,RPN Lambak Kanan (J. 10 Utara),0.0,0.0
+24_20,RPN Lambak Kanan (J. 10 Selatan),0.0,0.0
+24_21,RPN Lambak Kanan (J. 1@SR Dato Marsal),0.0,0.0
+24_22,J. Madang (Kg Manggis),0.0,0.0
+24_23,J. Madang (Kg Madang),0.0,0.0
+24_24,J. Utama Berakas (SM Berakas),0.0,0.0
+24_25,Brunei International Airport,0.0,0.0
+24_26,J. Berakas (Shell TAIB),0.0,0.0
+24_27,J. Berakas (Off J. Stadium),0.0,0.0
+24_28,J. Perdana Menteri (PMO),0.0,0.0
+24_29,J. Perdana Menteri (Masjid ash-Saliheen),0.0,0.0
+24_30,J. Kumbang Pasang (STPRI),0.0,0.0
+24_31,J. Simpang (SOAS),0.0,0.0
+24_32,J. Kianggeh (Terrace / Radisson),0.0,0.0
 34_1,BSB Bus Terminal,0.0,0.0
 34_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
-34_3,J. Kianggeh (Terrace / Radisson),0.0,0.0
-34_4,J. Simpang (SOAS),0.0,0.0
-34_5,J. Simpang (SOAS),0.0,0.0
-34_6,J. Kumbang Pasang (STPRI),0.0,0.0
-34_7,J. Kumbang Pasang (STPRI),0.0,0.0
-34_8,J. Kumbang Pasang (Riverview),0.0,0.0
-34_9,J. Kumbang Pasang (JPM),0.0,0.0
-34_10,Airport Lama (Bangunan JKR / TelBru),0.0,0.0
-34_11,Airport Lama (TelBru / Bangunan JKR),0.0,0.0
-34_12,Airport Lama (Dental / Fire Rescue),0.0,0.0
-34_13,Airport Lama (Fire Rescue / Dental),0.0,0.0
-34_14,Burong Pingai,0.0,0.0
-34_15,Burong Pingai,0.0,0.0
+34_3,J. Simpang (SOAS),0.0,0.0
+34_4,J. Kumbang Pasang (STPRI),0.0,0.0
+34_5,J. Kumbang Pasang (Riverview),0.0,0.0
+34_6,Airport Lama (Bangunan JKR / TelBru),0.0,0.0
+34_7,Airport Lama (Dental / Fire Rescue),0.0,0.0
+34_8,Burong Pingai,0.0,0.0
+34_9,J. Pertahanan (Opp ISB),0.0,0.0
+34_10,J. Berakas (Kebajikan/Times Sq&Airport Mall),0.0,0.0
+34_11,Brunei International Airport,0.0,0.0
+34_12,J. Utama Berakas (SM Berakas),0.0,0.0
+34_13,J. Madang,0.0,0.0
+34_14,J. 1 Lambak Kanan,0.0,0.0
+34_15,J. Manggis 2,0.0,0.0
 34_16,J. Muara (Hua Ho Manggis),0.0,0.0
-34_17,J. Manggis 2,0.0,0.0
-34_18,J. Muara (MSPSBS-Science College),0.0,0.0
-34_19,J. 1 Lambak Kanan,0.0,0.0
-34_20,J. Muara (Kompleks Delima Jaya),0.0,0.0
-34_21,J. Madang,0.0,0.0
-34_22,Brunei International Airport,0.0,0.0
-34_23,J. Utama Berakas (SM Berakas),0.0,0.0
-34_24,J. Berakas (Shell TAIB / Opp Times Sq),0.0,0.0
-34_25,Brunei International Airport,0.0,0.0
-34_26,J. Pertahanan (ISB),0.0,0.0
-34_27,J. Berakas (Kebajikan/Times Sq & Airport Mall),0.0,0.0
-34_28,J. Pertahanan (MinDef),0.0,0.0
-34_29,J. Pertahanan (Opp ISB),0.0,0.0
+34_17,J. Muara (MSPSBS-Science College),0.0,0.0
+34_18,J. Muara (Kompleks Delima Jaya),0.0,0.0
+34_19,Brunei International Airport,0.0,0.0
+34_20,J. Berakas (Shell TAIB / Opp Times Sq),0.0,0.0
+34_21,J. Pertahanan (ISB),0.0,0.0
+34_22,J. Pertahanan (MinDef),0.0,0.0
+34_23,Burong Pingai,0.0,0.0
+34_24,Airport Lama (Fire Rescue / Dental),0.0,0.0
+34_25,Airport Lama (TelBru / Bangunan JKR),0.0,0.0
+34_26,J. Kumbang Pasang (JPM),0.0,0.0
+34_27,J. Kumbang Pasang (STPRI),0.0,0.0
+34_28,J. Simpang (SOAS),0.0,0.0
+34_29,J. Kianggeh (Terrace / Radisson),0.0,0.0
 35_1,BSB Bus Terminal,0.0,0.0
-35_2,J. Kianggeh (SM Chung Hwa/Pusat Belia),0.0,0.0
-35_3,J. Kianggeh (Terrace / Radisson),0.0,0.0
-35_4,J. Kianggeh (SMJA),0.0,0.0
-35_5,J. Kebangsaan (Mabohai / Supasave),0.0,0.0
-35_6,J. Kianggeh (Opp SMJA),0.0,0.0
-35_7,J. Menteri Besar (Immigration / Labour),0.0,0.0
-35_8,J. Kebangsaan (Opp Supasave / Mabohai),0.0,0.0
-35_9,J. Kebangsaan Lama,0.0,0.0
-35_10,Kg Sungai Akar (Spg 40),0.0,0.0
+35_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
+35_3,J. Kianggeh (SMJA),0.0,0.0
+35_4,J. Kebangsaan (Mabohai / Supasave),0.0,0.0
+35_5,J. Menteri Besar (Immigration / Labour),0.0,0.0
+35_6,J. Menteri Besar (Kastam / KHEU / Audit),0.0,0.0
+35_7,Diplomatic Enclave,0.0,0.0
+35_8,Kg Sungai Akar (Gurkha Camp / Spg 166),0.0,0.0
+35_9,Kg Sungai Akar (Spg 40),0.0,0.0
+35_10,J. Kebangsaan Lama,0.0,0.0
 35_11,Diplomatic Enclave,0.0,0.0
-35_12,Kg Sungai Akar (Gurkha Camp / Spg 166),0.0,0.0
-35_13,J. Menteri Besar (Immigration / Labour),0.0,0.0
-35_14,Diplomatic Enclave,0.0,0.0
-35_15,J. Menteri Besar (Kastam / KHEU / Audit),0.0,0.0
-35_16,J. Menteri Besar (Kastam / KHEU / Audit),0.0,0.0
+35_12,J. Menteri Besar (Immigration / Labour),0.0,0.0
+35_13,J. Menteri Besar (Kastam / KHEU / Audit),0.0,0.0
+35_14,J. Kebangsaan (Opp Supasave / Mabohai),0.0,0.0
+35_15,J. Kianggeh (Opp SMJA),0.0,0.0
+35_16,J. Kianggeh (Terrace / Radisson),0.0,0.0
+35_17,J. Kianggeh (SM Chung Hwa/Pusat Belia),0.0,0.0
 36_1,BSB Bus Terminal,0.0,0.0
 36_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
-36_3,J. Kianggeh (SM Chung Hwa/Pusat Belia),0.0,0.0
-36_4,J. Kianggeh (SMJA),0.0,0.0
-36_5,J. Kebangsaan (Supasave / Mabohai),0.0,0.0
-36_6,J. Kianggeh (Opp SMJA),0.0,0.0
-36_7,J. Menteri Besar (Immigration / Labour),0.0,0.0
-36_8,J. Kebangsaan (Supasave / Mabohai),0.0,0.0
-36_9,J. Menteri Besar (Kastam / KHEU / Audit),0.0,0.0
-36_10,J. Kebangsaan,0.0,0.0
-36_11,Diplomatic Enclave,0.0,0.0
-36_12,J. Menteri Besar (Kastam / KHEU / Audit),0.0,0.0
-36_13,J. Pusat Dakwah (Opp Pusat Dakwah),0.0,0.0
-36_14,J. Menteri Besar (Immigration / Labour),0.0,0.0
-36_15,J. Kebangsaan Lama,0.0,0.0
-36_16,J. Delima 2,0.0,0.0
+36_3,J. Kianggeh (SMJA),0.0,0.0
+36_4,J. Kebangsaan (Supasave / Mabohai),0.0,0.0
+36_5,J. Menteri Besar (Immigration / Labour),0.0,0.0
+36_6,J. Menteri Besar (Kastam / KHEU / Audit),0.0,0.0
+36_7,Diplomatic Enclave,0.0,0.0
+36_8,J. Pusat Dakwah (Opp Pusat Dakwah),0.0,0.0
+36_9,ICC,0.0,0.0
+36_10,National Stadium,0.0,0.0
+36_11,J. Pulaie (Masjid Pulaie),0.0,0.0
+36_12,J. Kebangsaan Lama (Spg 106),0.0,0.0
+36_13,J. Anggreek Desa,0.0,0.0
+36_14,Pancha Delima (SR Anggreek Desa),0.0,0.0
+36_15,J. Delima 2,0.0,0.0
+36_16,J. Kebangsaan Lama,0.0,0.0
 36_17,J. Muara (Hua Ho Delima),0.0,0.0
-36_18,Pancha Delima (SR Anggreek Desa),0.0,0.0
-36_19,Brunei International Airport,0.0,0.0
-36_20,J. Anggreek Desa,0.0,0.0
-36_21,J. Berakas (Shell TAIB/Opp Times Sq),0.0,0.0
-36_22,J. Kebangsaan Lama (Spg 106),0.0,0.0
-36_23,J. Anggrek Desa,0.0,0.0
-36_24,J. Pulaie (Masjid Pulaie),0.0,0.0
-36_25,J. Kebangsaan Lama,0.0,0.0
-36_26,National Stadium,0.0,0.0
-36_27,Diplomatic Enclave,0.0,0.0
-36_28,ICC,0.0,0.0
+36_18,Brunei International Airport,0.0,0.0
+36_19,J. Berakas (Shell TAIB/Opp Times Sq),0.0,0.0
+36_20,J. Anggrek Desa,0.0,0.0
+36_21,J. Kebangsaan Lama,0.0,0.0
+36_22,Diplomatic Enclave,0.0,0.0
+36_23,J. Menteri Besar (Immigration / Labour),0.0,0.0
+36_24,J. Menteri Besar (Kastam / KHEU / Audit),0.0,0.0
+36_25,J. Kebangsaan,0.0,0.0
+36_26,J. Kebangsaan (Supasave / Mabohai),0.0,0.0
+36_27,J. Kianggeh (Opp SMJA),0.0,0.0
+36_28,J. Kianggeh (Terrace / Radisson),0.0,0.0
+36_29,J. Kianggeh (SM Chung Hwa/Pusat Belia),0.0,0.0
 37_1,BSB Bus Terminal,0.0,0.0
 37_2,Jubilee Hotel,0.0,0.0
-37_3,Jubilee Hotel,0.0,0.0
-37_4,J. Subok (MOFAT),0.0,0.0
-37_5,J. Subok (Spore High Comm),0.0,0.0
-37_6,J. Subok (Opp Spore High Comm),0.0,0.0
-37_7,J. Subok (Spg 168),0.0,0.0
-37_8,J. Subok (Spg 121 / 160),0.0,0.0
-37_9,J. Subok (Spg 300),0.0,0.0
-37_10,J. Subok (Spg 217 / 247),0.0,0.0
-37_11,J. Subok (SR Orang Kaya Besar Imas),0.0,0.0
-37_12,J. Subok (SR Orang Kaya Besar Imas),0.0,0.0
-37_13,J. Subok (Masjid Kg Belimbing),0.0,0.0
-37_14,J. Subok (Masjid Kg Belimbing),0.0,0.0
-37_15,J. Sungai Akar (Masjid Kg Belimbing),0.0,0.0
-37_16,J. Sungai Akar (Gurkha Camp),0.0,0.0
-37_17,J. Sungai Akar (Spg 166 / 108),0.0,0.0
-37_18,J. Muara (Kg Sg Tilong),0.0,0.0
+37_3,J. Subok (MOFAT),0.0,0.0
+37_4,J. Subok (Opp Spore High Comm),0.0,0.0
+37_5,J. Subok (Spg 121 / 160),0.0,0.0
+37_6,J. Subok (Spg 217 / 247),0.0,0.0
+37_7,J. Subok (SR Orang Kaya Besar Imas),0.0,0.0
+37_8,J. Subok (Masjid Kg Belimbing),0.0,0.0
+37_9,J. Sungai Akar (Spg 166@Gurkha Camp),0.0,0.0
+37_10,J. Sungai Akar (Spg 166 / 108),0.0,0.0
+37_11,J. Sungai Akar (Spg 40),0.0,0.0
+37_12,J. Muara (Kg Sg Tilong/Kg Sg Hancing),0.0,0.0
+37_13,J. Muara (Kg Salambigar),0.0,0.0
+37_14,J. Muara (Kg Tanah Jambu),0.0,0.0
+37_15,J. Muara (Kg Salar/Kg Kapok/Shell Kapok),0.0,0.0
+37_16,Perpindahan Bukit Kabun,0.0,0.0
+37_17,J. Muara (Spg 279 / J. Meragang),0.0,0.0
+37_18,Kg Sabun (Muara Post Office),0.0,0.0
 37_19,Pekan Muara,0.0,0.0
 37_20,Kg Sabun (Masjid Setia Ali),0.0,0.0
-37_21,Kg Sabun (Muara Post Office),0.0,0.0
-37_22,J. Muara (Kg Kapok),0.0,0.0
-37_23,J. Muara (Spg 279 / J. Meragang),0.0,0.0
-37_24,J. Muara (Kg Salar),0.0,0.0
-37_25,Perpindahan Bukit Kabun,0.0,0.0
-37_26,J. Muara (Kg Tanah Jambu),0.0,0.0
-37_27,J. Muara (Kg Salar/Kg Kapok/Shell Kapok),0.0,0.0
-37_28,J. Muara (SR Tanah Jambu),0.0,0.0
-37_29,J. Muara (Kg Tanah Jambu),0.0,0.0
-37_30,J. Muara (Kg Salambigar),0.0,0.0
-37_31,Kg Salambigar (Villa Al-Hidayah),0.0,0.0
-37_32,J. Muara (Kg Salambigar),0.0,0.0
-37_33,Kg Salambigar (Indonesian Embassy),0.0,0.0
-37_34,J. Muara (Kg Sg Tilong/Kg Sg Hancing),0.0,0.0
-37_35,J. Muara (Kg Sg Hancing),0.0,0.0
-37_36,J. Sungai Akar (Spg 40),0.0,0.0
+37_21,J. Muara (Kg Kapok),0.0,0.0
+37_22,J. Muara (Kg Salar),0.0,0.0
+37_23,J. Muara (Kg Tanah Jambu),0.0,0.0
+37_24,J. Muara (SR Tanah Jambu),0.0,0.0
+37_25,J. Muara (Kg Salambigar),0.0,0.0
+37_26,Kg Salambigar (Villa Al-Hidayah),0.0,0.0
+37_27,Kg Salambigar (Indonesian Embassy),0.0,0.0
+37_28,J. Muara (Kg Sg Hancing),0.0,0.0
+37_29,J. Muara (Kg Sg Tilong),0.0,0.0
+37_30,J. Sungai Akar (Gurkha Camp),0.0,0.0
+37_31,J. Subok (Masjid Kg Belimbing),0.0,0.0
+37_32,J. Subok (SR Orang Kaya Besar Imas),0.0,0.0
+37_33,J. Subok (Spg 300),0.0,0.0
+37_34,J. Subok (Spg 168),0.0,0.0
+37_35,J. Subok (Spore High Comm),0.0,0.0
+37_36,Jubilee Hotel,0.0,0.0
 38_1,BSB Bus Terminal,0.0,0.0
 38_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
-38_3,J. Kianggeh (Terrace / Radisson),0.0,0.0
-38_4,J. Simpang (SOAS),0.0,0.0
-38_5,J. Simpang (SOAS),0.0,0.0
-38_6,J. Kumbang Pasang (STPRI),0.0,0.0
-38_7,J. Kumbang Pasang (STPRI),0.0,0.0
-38_8,J. Kumbang Pasang (Riverview),0.0,0.0
-38_9,J. Berakas (PMO / Masjid Ash-Saliheen),0.0,0.0
-38_10,J. Berakas (PMO / Masjid Ash-Saliheen),0.0,0.0
-38_11,J. Berakas (Off J. Stadium),0.0,0.0
-38_12,J. Berakas (Bolkiah Kem),0.0,0.0
-38_13,J. Berakas (Off J. Pertahanan),0.0,0.0
-38_14,J. Berakas (Kebajikan/Time Sq/Airport Mall),0.0,0.0
-38_15,J. Berakas (Shell TAIB),0.0,0.0
-38_16,Brunei International Airport,0.0,0.0
-38_17,Brunei International Airport,0.0,0.0
-38_18,J. Muara (SM Berakas/Masjid M. Bolkiah),0.0,0.0
-38_19,J. Muara (Delima Jaya),0.0,0.0
-38_20,J. Muara (MSPSBS / MTSSR),0.0,0.0
-38_21,J. Muara (Spg 94),0.0,0.0
+38_3,J. Simpang (SOAS),0.0,0.0
+38_4,J. Kumbang Pasang (STPRI),0.0,0.0
+38_5,J. Kumbang Pasang (Riverview),0.0,0.0
+38_6,J. Berakas (PMO / Masjid Ash-Saliheen),0.0,0.0
+38_7,J. Berakas (Bolkiah Kem),0.0,0.0
+38_8,J. Berakas (Kebajikan/Time Sq/Airport Mall),0.0,0.0
+38_9,Brunei International Airport,0.0,0.0
+38_10,J. Muara (SM Berakas/Masjid M. Bolkiah),0.0,0.0
+38_11,J. Muara (MSPSBS / MTSSR),0.0,0.0
+38_12,J. Muara (SR Delima),0.0,0.0
+38_13,Kg Sungai Tilong (Spg 311/351/395/427),0.0,0.0
+38_14,Kg Sungai Hancing (Spg 529 / 655),0.0,0.0
+38_15,J. Muara (Kg Salambigar),0.0,0.0
+38_16,Kg Tanah Jambu (SR Tanah Jambu),0.0,0.0
+38_17,J. Muara - Kg Salar (Spg 606),0.0,0.0
+38_18,J. Muara (J. Bukit Kabun),0.0,0.0
+38_19,J. Muara (Kg Kapok),0.0,0.0
+38_20,J. Muara Kg Sabun (Spg 158),0.0,0.0
+38_21,Kg Sabun (Opp Masjid Setia Ali),0.0,0.0
 38_22,Pekan Muara,0.0,0.0
 38_23,J. Muara (Muara Centre),0.0,0.0
 38_24,Kg Sabun (Masjid Setia Ali),0.0,0.0
-38_25,Kg Sabun (Opp Masjid Setia Ali),0.0,0.0
-38_26,J. Muara (Kg Sabun Spg 158),0.0,0.0
-38_27,J. Muara (Kg Kapok),0.0,0.0
-38_28,J. Muara (Kg Kapok),0.0,0.0
-38_29,J. Muara (J. Bukit Kabun),0.0,0.0
-38_30,Kg Salar (Spg 599 / 689),0.0,0.0
-38_31,J. Muara - Kg Salar (Spg 606),0.0,0.0
-38_32,Kg Tanah Jambu (SR Tanah Jambu),0.0,0.0
-38_33,Kg Salambigar (Spg 736 / 700 / 638),0.0,0.0
-38_34,Kg Tanah Jambu (SR Tanah Jambu),0.0,0.0
-38_35,Kg Sungai Hancing (Spg 560),0.0,0.0
-38_36,J. Muara (Kg Salambigar),0.0,0.0
-38_37,Kg Sungai Hancing (Spg 542),0.0,0.0
-38_38,Kg Sungai Hancing (Spg 529 / 655),0.0,0.0
-38_39,J. Muara Kg Sg Tilong (Spg 462 / 440 / 350),0.0,0.0
-38_40,Kg Sungai Tilong (Spg 311/351/395/427),0.0,0.0
-38_41,J. Muara (Hua Ho Manggis Mall),0.0,0.0
-38_42,J. Muara (SR Delima),0.0,0.0
+38_25,J. Muara (Kg Kapok),0.0,0.0
+38_26,Kg Salar (Spg 599 / 689),0.0,0.0
+38_27,Kg Tanah Jambu (SR Tanah Jambu),0.0,0.0
+38_28,Kg Salambigar (Spg 736 / 700 / 638),0.0,0.0
+38_29,Kg Sungai Hancing (Spg 560),0.0,0.0
+38_30,Kg Sungai Hancing (Spg 542),0.0,0.0
+38_31,J. Muara Kg Sg Tilong (Spg 462 / 440 / 350),0.0,0.0
+38_32,J. Muara (Hua Ho Manggis Mall),0.0,0.0
+38_33,J. Muara (Spg 94),0.0,0.0
+38_34,J. Muara (Delima Jaya),0.0,0.0
+38_35,Brunei International Airport,0.0,0.0
+38_36,J. Berakas (Shell TAIB),0.0,0.0
+38_37,J. Berakas (Off J. Pertahanan),0.0,0.0
+38_38,J. Berakas (Off J. Stadium),0.0,0.0
+38_39,J. Berakas (PMO / Masjid Ash-Saliheen),0.0,0.0
+38_40,J. Kumbang Pasang (STPRI),0.0,0.0
+38_41,J. Simpang (SOAS),0.0,0.0
+38_42,J. Kianggeh (Terrace / Radisson),0.0,0.0
 39_1,BSB Bus Terminal,0.0,0.0
 39_2,J. Residencyc (Tanah Perkuburan/Cemetery),0.0,0.0
-39_3,J. Residencyc (Brunei Handycraft Centre),0.0,0.0
-39_4,J. Kota Batu (Kg Sg Lampas Spg 205),0.0,0.0
-39_5,J. Kota Batu-Kg Sg Lampas (Spg 214 / Fire Rescue),0.0,0.0
-39_6,J. Kota Batu - Kg Pintu Malim (Spg 231/253),0.0,0.0
-39_7,Kg Pintu Malim (SR Pintu Malim),0.0,0.0
-39_8,J. Kota Batu (Kg Kota Batu (Museum)),0.0,0.0
-39_9,Kg Kota Batu (Brunei Museum),0.0,0.0
-39_10,J. Kota Batu (Kg Pelambaian),0.0,0.0
-39_11,J. Kota Batu (Kg Pelambaian),0.0,0.0
-39_12,J. Kota Batu (Kg Dato Gandi Spg 569),0.0,0.0
-39_13,Kg Dato Gandi (Spg 572),0.0,0.0
-39_14,J. Kota Batu (Kg Sg Matan Spg 663/700),0.0,0.0
-39_15,Kg Sg Matan (Spg 722 / 702 / 664),0.0,0.0
-39_16,J. Kota Batu (Kg Seredang Spg 755),0.0,0.0
-39_17,Mangrove Resort,0.0,0.0
-39_18,Mangrove Resort,0.0,0.0
-39_19,J. Kota Batu (Kg Sungai Belukut),0.0,0.0
-39_20,Pekan Muara,0.0,0.0
-39_21,Kg Sabun (Masjid Setia Ali),0.0,0.0
-39_22,J. Muara (Muara Post Office),0.0,0.0
+39_3,J. Kota Batu (Kg Sg Lampas Spg 205),0.0,0.0
+39_4,J. Kota Batu - Kg Pintu Malim (Spg 231/253),0.0,0.0
+39_5,J. Kota Batu (Kg Kota Batu (Museum)),0.0,0.0
+39_6,J. Kota Batu (Kg Pelambaian),0.0,0.0
+39_7,J. Kota Batu (Kg Dato Gandi Spg 569),0.0,0.0
+39_8,J. Kota Batu (Kg Sg Matan Spg 663/700),0.0,0.0
+39_9,J. Kota Batu (Kg Seredang Spg 755),0.0,0.0
+39_10,Mangrove Resort,0.0,0.0
+39_11,J. Kota Batu (Kg Sungai Belukut),0.0,0.0
+39_12,J. Kota Batu (Kg Sungai Besar),0.0,0.0
+39_13,J. Kota Batu (Kg Mentiri / Masjid),0.0,0.0
+39_14,Pantai Mentiri Golf Club,0.0,0.0
+39_15,RPN Kg Mentiri (J. D/Masjid RPN Mentiri),0.0,0.0
+39_16,J. Kota Batu (Masjid Kg Sg Buloh),0.0,0.0
+39_17,J. Muara (Kg Salar),0.0,0.0
+39_18,J. Muara (Kg Kapok),0.0,0.0
+39_19,J. Muara Kg Sabun (Spg 158),0.0,0.0
+39_20,J. Muara (Muara Post Office),0.0,0.0
+39_21,Pekan Muara,0.0,0.0
+39_22,Kg Sabun (Masjid Setia Ali),0.0,0.0
 39_23,J. Muara (Kg Kapok Spg 209 / 279),0.0,0.0
-39_24,J. Muara (Kg Sabun Spg 158),0.0,0.0
-39_25,Kg Kapok (Spg 425/459/481/531),0.0,0.0
-39_26,J. Muara (Kg Kapok),0.0,0.0
-39_27,J. Muara (Kg Salar),0.0,0.0
-39_28,J. Muara (Kg Salar),0.0,0.0
-39_29,J. Kota Batu (Kg Sg Buloh J. Batu Marang),0.0,0.0
-39_30,Kg Sungai Buloh (Spg 5 / 135),0.0,0.0
-39_31,J. Kota Batu (Masjid Kg Sg Buloh),0.0,0.0
-39_32,RPN Kg Mentiri (Spg 175 / Masjid),0.0,0.0
-39_33,Pantai Mentiri Golf Club,0.0,0.0
-39_34,RPN Kg Mentiri (J. D/Masjid RPN Mentiri),0.0,0.0
-39_35,J. Kota Batu (Kg Mentiri / Masjid),0.0,0.0
-39_36,RPN Kg Mentiri (Spg 345 / 379 / 175),0.0,0.0
-39_37,J. Kota Batu (Kg Sungai Besar),0.0,0.0
-39_38,J. Kota Batu (Kg Sungai Belukut),0.0,0.0
+39_24,Kg Kapok (Spg 425/459/481/531),0.0,0.0
+39_25,J. Muara (Kg Salar),0.0,0.0
+39_26,J. Kota Batu (Kg Sg Buloh J. Batu Marang),0.0,0.0
+39_27,Kg Sungai Buloh (Spg 5 / 135),0.0,0.0
+39_28,RPN Kg Mentiri (Spg 175 / Masjid),0.0,0.0
+39_29,RPN Kg Mentiri (J. D/Masjid RPN Mentiri),0.0,0.0
+39_30,RPN Kg Mentiri (Spg 345 / 379 / 175),0.0,0.0
+39_31,J. Kota Batu (Kg Sungai Besar),0.0,0.0
+39_32,J. Kota Batu (Kg Sungai Belukut),0.0,0.0
+39_33,Mangrove Resort,0.0,0.0
+39_34,Kg Sg Matan (Spg 722 / 702 / 664),0.0,0.0
+39_35,Kg Dato Gandi (Spg 572),0.0,0.0
+39_36,J. Kota Batu (Kg Pelambaian),0.0,0.0
+39_37,Kg Kota Batu (Brunei Museum),0.0,0.0
+39_38,Kg Pintu Malim (SR Pintu Malim),0.0,0.0
+39_39,J. Kota Batu-Kg Sg Lampas (Spg 214 / Fire Rescue),0.0,0.0
+39_40,J. Residencyc (Brunei Handycraft Centre),0.0,0.0
 42_1,BSB Bus Terminal,0.0,0.0
 42_2,Royal Regalia/Sumbiling (Fire & Rescue),0.0,0.0
-42_3,J. SOAS (Royal Regalia),0.0,0.0
-42_4,J. RIPAS (Mahkamah (Court)),0.0,0.0
-42_5,J. RIPAS (Mile 1 - Batu 1),0.0,0.0
-42_6,J. RIPAS (Sri Complex/KUPUSB/Tumasek),0.0,0.0
-42_7,J. RIPAS (Tumasek/KUPUSB),0.0,0.0
-42_8,J. RIPAS (Spg 153 / 237),0.0,0.0
-42_9,Taman Damuan,0.0,0.0
-42_10,J. RIPAS (Istana Nurul Iman),0.0,0.0
-42_11,J. Tutong (Opp Spg 389/394/402/444/285),0.0,0.0
-42_12,Taman Damuan,0.0,0.0
-42_13,J. Tutong (Opp Taman Puri/National Inn),0.0,0.0
-42_14,J. Tutong (Kg Telanai),0.0,0.0
-42_15,J. Tutong (Opp SR Bendahara Sakam Bunut),0.0,0.0
-42_16,J. Tutong (Opp National Inn/J. Hj Halus),0.0,0.0
-42_17,J. Tutong (Spg 728/774/J. Dadap),0.0,0.0
-42_18,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
-42_19,J. Tutong (Opp Spg 993/1038/1080/1116/1026),0.0,0.0
-42_20,J. Tutong (Spg 729/735/759/779/803),0.0,0.0
-42_21,J. Tutong (Opp Spg 993/1109/1023),0.0,0.0
-42_22,J. Tutong (Sengkurong Health Centre),0.0,0.0
-42_23,J. Tutong (Hua Ho Tg Bunut),0.0,0.0
+42_3,J. RIPAS Mahkamah (Court),0.0,0.0
+42_4,J. RIPAS (Sri Complex/KUPUSB/Tumasek),0.0,0.0
+42_5,J. RIPAS (Spg 153 / 237),0.0,0.0
+42_6,J. RIPAS (Istana Nurul Iman),0.0,0.0
+42_7,Taman Damuan,0.0,0.0
+42_8,J. Tutong (Kg Telanai),0.0,0.0
+42_9,J. Tutong (Opp National Inn/J. Hj Halus),0.0,0.0
+42_10,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
+42_11,J. Tutong (Spg 729/735/759/779/803),0.0,0.0
+42_12,J. Tutong (Spg 993/1109/1023),0.0,0.0
+42_13,J. Tutong (Hua Ho Tg Bunut),0.0,0.0
+42_14,J. Tutong (Opp Agriculture RC),0.0,0.0
+42_15,J. Tutong (SR Sengkurong),0.0,0.0
+42_16,J. Tutong (J.Pasai 1/Ban 3/Spg 102),0.0,0.0
+42_17,J. Mulaut/Limau Manis (Ayamku),0.0,0.0
+42_18,J. Ban 4 / Ban 5 / Spg 285,0.0,0.0
+42_19,J. Mulaut / Limau Manis (Hua Ho Mulaut),0.0,0.0
+42_20,J. Mulaut / Limau Manis (MOSAL),0.0,0.0
+42_21,Taman Mini Parit,0.0,0.0
+42_22,J. Mulaut/Limau Manis (Spg 1043/1133/1145/1253),0.0,0.0
+42_23,J. Kuala Lurah (Spg 60 / 96 / 152),0.0,0.0
 42_24,Pos Kawalan Kuala Lurah,0.0,0.0
 42_25,J. Kuala Lurah (Opp Spg 152 / 96 / 60),0.0,0.0
-42_26,J. Kuala Lurah (Spg 60 / 96 / 152),0.0,0.0
-42_27,Taman Mini Parit,0.0,0.0
-42_28,J. Mulaut/Limau Manis (Spg 1043/1133/1145/1253),0.0,0.0
-42_29,J. Mulaut/Limau Manis (Spg 816 / 884 / 938),0.0,0.0
-42_30,Taman Mini Parit,0.0,0.0
-42_31,J. Mulaut/Limau Manis (S. Ugama Kg Masin),0.0,0.0
-42_32,J. Mulaut/Limau Manis (MOSAL),0.0,0.0
-42_33,J. Mulaut/Limau Manis (Spg 647 / 718 / 728),0.0,0.0
-42_34,J. Mulaut/Limau Manis (Hua Ho Mulaut),0.0,0.0
-42_35,J. Mulaut/Limau Manis (Spg 525 / 558 / 610),0.0,0.0
-42_36,J. Ban 4 / Ban 5 (Spg 285),0.0,0.0
-42_37,Shell Bebatik Kilanas,0.0,0.0
-42_38,J. Mulaut/Limau Manis (Ayamku),0.0,0.0
-42_39,J. Mulaut/Limau Manis (Hua Ho Mulaut),0.0,0.0
-42_40,J. Tutong (J. Pasai 1/Ban 3/Spg 102),0.0,0.0
-42_41,J. Mulaut/Limau Manis (S. Ugama Mulaut),0.0,0.0
-42_42,J. Tutong (SR Sengkurong),0.0,0.0
-42_43,J. Mulaut/Limau Manis (J. Pasal2/Spg 58/102),0.0,0.0
-42_44,J. Tutong (Opp Agriculture RC),0.0,0.0
-42_45,J. Tutong (Shell Sengkurong),0.0,0.0
+42_26,Taman Mini Parit,0.0,0.0
+42_27,J. Mulaut/Limau Manis (Spg 816 / 884 / 938),0.0,0.0
+42_28,J. Mulaut / Limau Manis (S. Ugama Kg Masin),0.0,0.0
+42_29,J. Mulaut / Limau Manis (Spg 647 / 718 / 728),0.0,0.0
+42_30,J. Mulaut / Limau Manis (Spg 525 / 558 / 610),0.0,0.0
+42_31,Shell Bebatik Kilanas,0.0,0.0
+42_32,J. Mulaut / Limau Manis (Hua Ho Mulaut),0.0,0.0
+42_33,J. Mulaut/Limau Manis (S. Ugama Mulaut),0.0,0.0
+42_34,J. Mulaut / Limau Manis (J. Pasai2/Spg 58/102),0.0,0.0
+42_35,J. Tutong (Shell Sengkurong),0.0,0.0
+42_36,J. Tutong (Sengkurong Health Centre),0.0,0.0
+42_37,J. Tutong (Opp Hua Ho Tg Bunut),0.0,0.0
+42_38,J. Tutong (Opp Spg 993/1038/1080/1116/1026),0.0,0.0
+42_39,J. Tutong (Spg 728/774/J. Dadap),0.0,0.0
+42_40,J. Tutong (Opp SR Bendahara Sakam Bunut),0.0,0.0
+42_41,J. Tutong (Opp Taman Puri/National Inn),0.0,0.0
+42_42,J. Tutong (Opp Spg 389/394/402/444/285),0.0,0.0
+42_43,Taman Damuan,0.0,0.0
+42_44,J. RIPAS (Tumasek/KUPUSB),0.0,0.0
+42_45,J. RIPAS (Mile 1 - Batu 1),0.0,0.0
+42_46,J. SOAS (Royal Regalia),0.0,0.0
 44_1,BSB Bus Terminal,0.0,0.0
 44_2,J. SOAS (Royal Regalia),0.0,0.0
-44_3,J. SOAS (Royal Regalia),0.0,0.0
-44_4,Sumbiling (Fire & Rescue),0.0,0.0
-44_5,J. RIPAS - Sumbiling,0.0,0.0
-44_6,J. RIPAS (Mahkamah (Court)),0.0,0.0
-44_7,J. RIPAS (Mile 1 / Batu 1),0.0,0.0
-44_8,J. RIPAS (Sri Complex/KUPUSB),0.0,0.0
-44_9,J. RIPAS (Istana Nurul Iman),0.0,0.0
-44_10,Taman Damuan,0.0,0.0
-44_11,J. RIPAS (Istana Nurul Iman),0.0,0.0
-44_12,J. Tutong (Taman Puri),0.0,0.0
-44_13,Taman Damuan,0.0,0.0
-44_14,J. Tutong (Opp SR Bendahara Sakam Bunut),0.0,0.0
+44_3,Sumbiling (Fire & Rescue),0.0,0.0
+44_4,J. RIPAS Mahkamah (Court),0.0,0.0
+44_5,J. RIPAS (Sri Complex/KUPUSB),0.0,0.0
+44_6,J. RIPAS (Istana Nurul Iman),0.0,0.0
+44_7,Taman Damuan,0.0,0.0
+44_8,J. Tutong (Kg Telanai),0.0,0.0
+44_9,J. Tutong (Spg 625),0.0,0.0
+44_10,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
+44_11,J. Tutong (Spg 729 / 803),0.0,0.0
+44_12,J. Bengkurong Masin (Soon Lee Megamart),0.0,0.0
+44_13,J. Junjongan (TelBru Station),0.0,0.0
+44_14,J. Junjongan (Masjid Kg Junjongan),0.0,0.0
 44_15,Pos Kawalan Kuala Lurah,0.0,0.0
-44_16,J. Junjongan (Masjid Kg Junjongan),0.0,0.0
-44_17,J. Junjongan (SR Junjongan),0.0,0.0
-44_18,J. Junjongan (TelBru Station),0.0,0.0
-44_19,J. Kuala Lurah (Spg 125),0.0,0.0
+44_16,J. Junjongan (SR Junjongan),0.0,0.0
+44_17,J. Kuala Lurah (Spg 125),0.0,0.0
+44_18,J. Kuala Lurah (Masjid Limau Manis),0.0,0.0
+44_19,J. Junjongan (Masjid Kg Junjongan),0.0,0.0
 44_20,J. Bengkurong Masin (Soon Lee Megamart),0.0,0.0
-44_21,J. Kuala Lurah (Masjid Limau Manis),0.0,0.0
-44_22,J. Tutong (Spg 729 / 803),0.0,0.0
-44_23,J. Junjongan (Masjid Kg Junjongan),0.0,0.0
-44_24,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
-44_25,J. Bengkurong Masin (Soon Lee Megamart),0.0,0.0
-44_26,J. Tutong (Spg 625),0.0,0.0
-44_27,J. Tutong (Kg Bunut / Spg 774),0.0,0.0
-44_28,J. Tutong (Kg Telanai),0.0,0.0
+44_21,J. Tutong (Kg Bunut / Spg 774),0.0,0.0
+44_22,J. Tutong (Opp SR Bendahara Sakam Bunut),0.0,0.0
+44_23,J. Tutong (Taman Puri),0.0,0.0
+44_24,Taman Damuan,0.0,0.0
+44_25,J. RIPAS (Istana Nurul Iman),0.0,0.0
+44_26,J. RIPAS (Mile 1 / Batu 1),0.0,0.0
+44_27,J. RIPAS - Sumbiling,0.0,0.0
+44_28,J. SOAS (Royal Regalia),0.0,0.0
 45_1,BSB Bus Terminal,0.0,0.0
 45_2,J. SOAS (Royal Regalia),0.0,0.0
-45_3,J. SOAS (Royal Regalia),0.0,0.0
-45_4,Sumbiling (Fire & Rescue),0.0,0.0
-45_5,J. RIPAS - Sumbiling,0.0,0.0
-45_6,J. RIPAS (Mahkamah (Court)),0.0,0.0
-45_7,J. RIPAS (KUPUSB/Mile 1-Batu 1),0.0,0.0
-45_8,J. RIPAS (Sri Complex/KUPUSB),0.0,0.0
-45_9,J. RIPAS (Opp Shell Tumasek),0.0,0.0
-45_10,J. RIPAS (Istana Nurul Iman),0.0,0.0
-45_11,Taman Damuan,0.0,0.0
-45_12,Taman Damuan,0.0,0.0
-45_13,J. Tutong (Opp SR Bendahara Sakam Bunut),0.0,0.0
-45_14,J. Tutong (Spg 625),0.0,0.0
-45_15,J. Tutong (Masjid Kg Bunut),0.0,0.0
-45_16,J. Mulaut/Limau Manis (Masjid DPM Abdul Mateen),0.0,0.0
-45_17,J. Mulaut (Ban 4),0.0,0.0
-45_18,J. Mulaut/Limau Manis (Spg 285),0.0,0.0
-45_19,J. Pasai 1 (Ban 3),0.0,0.0
-45_20,J. Tutong (Kg Pasai),0.0,0.0
-45_21,J. Tutong (SR Sengkurong),0.0,0.0
-45_22,J. Tutong (Hua Ho/Masjid Sengkurong),0.0,0.0
-45_23,J. Tutong (Hua Ho Tg Bunut),0.0,0.0
-45_24,J. Tutong (Opp Spg 1116 / 1206),0.0,0.0
-45_25,J. Tutong (Kg Kilanas / Ban 3),0.0,0.0
-45_26,J. Tutong (Nusa Laila),0.0,0.0
-45_27,J. Tutong (Spg 729 / 803),0.0,0.0
-45_28,J. Tutong (Home Centre),0.0,0.0
-45_29,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
-45_30,J. Tutong (Spg 774),0.0,0.0
+45_3,Sumbiling (Fire & Rescue),0.0,0.0
+45_4,J. RIPAS Mahkamah (Court),0.0,0.0
+45_5,J. RIPAS (Sri Complex/KUPUSB),0.0,0.0
+45_6,J. RIPAS (Istana Nurul Iman),0.0,0.0
+45_7,Taman Damuan,0.0,0.0
+45_8,J. Tutong (Spg 625),0.0,0.0
+45_9,J. Tutong (Masjid Kg Bunut),0.0,0.0
+45_10,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
+45_11,J. Tutong (Spg 729 / 803),0.0,0.0
+45_12,J. Tutong (Kg Kilanas / Ban 3),0.0,0.0
+45_13,J. Tutong (Hua Ho Tg Bunut),0.0,0.0
+45_14,J. Tutong (SR Sengkurong),0.0,0.0
+45_15,J. Pasai 1 (Ban 3),0.0,0.0
+45_16,J. Mulaut (Ban 4),0.0,0.0
+45_17,J. Mulaut / Limau Manis (Masjid DPM Abdul Mateen),0.0,0.0
+45_18,J. Mulaut / Limau Manis (Spg 285),0.0,0.0
+45_19,J. Tutong (Kg Pasai),0.0,0.0
+45_20,J. Tutong (Hua Ho/Masjid Sengkurong),0.0,0.0
+45_21,J. Tutong (Opp Hua Ho Tg Bunut),0.0,0.0
+45_22,J. Tutong (Opp Spg 1116 / 1206),0.0,0.0
+45_23,J. Tutong (Nusa Laila),0.0,0.0
+45_24,J. Tutong (Home Centre),0.0,0.0
+45_25,J. Tutong (Spg 774),0.0,0.0
+45_26,J. Tutong (Opp SR Bendahara Sakam Bunut),0.0,0.0
+45_27,Taman Damuan,0.0,0.0
+45_28,J. RIPAS (Opp Shell Tumasek),0.0,0.0
+45_29,J. RIPAS (KUPUSB/Mile 1-Batu 1),0.0,0.0
+45_30,J. RIPAS - Sumbiling,0.0,0.0
+45_31,J. SOAS (Royal Regalia),0.0,0.0
 49_1,BSB Bus Terminal,0.0,0.0
 49_2,J. SOAS (Royal Regalia),0.0,0.0
-49_3,J. SOAS (Royal Regalia),0.0,0.0
-49_4,Sumbiling (Fire & Rescue),0.0,0.0
-49_5,J. RIPAS - Sumbiling,0.0,0.0
-49_6,J. RIPAS (Mahkamah (Court)),0.0,0.0
-49_7,J. RIPAS (Mile 1 - Batu 1),0.0,0.0
-49_8,J. RIPAS (Sri Complex),0.0,0.0
-49_9,J. RIPAS (Opp KUPUSB),0.0,0.0
-49_10,J. RIPAS (KUPUSB),0.0,0.0
-49_11,J. RIPAS (Istana Nurul Iman),0.0,0.0
-49_12,Taman Damuan,0.0,0.0
-49_13,Taman Damuan,0.0,0.0
-49_14,J. Tutong (Opp SR Bendahara Sakam Bunut),0.0,0.0
-49_15,J. Tutong (Spg 625),0.0,0.0
-49_16,J. Ban 5,0.0,0.0
-49_17,J. Ban 1,0.0,0.0
+49_3,Sumbiling (Fire & Rescue),0.0,0.0
+49_4,J. RIPAS Mahkamah (Court),0.0,0.0
+49_5,J. RIPAS (Sri Complex),0.0,0.0
+49_6,J. RIPAS (KUPUSB),0.0,0.0
+49_7,J. RIPAS (Istana Nurul Iman),0.0,0.0
+49_8,Taman Damuan,0.0,0.0
+49_9,J. Tutong (Spg 625),0.0,0.0
+49_10,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
+49_11,J. Tutong (Spg 729),0.0,0.0
+49_12,J. Tutong (Spg Ban 3),0.0,0.0
+49_13,J. Ban 3 Mulaut (Spg Ban 3-A),0.0,0.0
+49_14,J. Mulaut Limau Manis (Spg Ban 4),0.0,0.0
+49_15,J. Ban 2,0.0,0.0
+49_16,J. Ban 1,0.0,0.0
+49_17,J. Ban 5,0.0,0.0
 49_18,J. Ban 6,0.0,0.0
 49_19,Mulaut Abattoir,0.0,0.0
-49_20,J. Ban 2,0.0,0.0
-49_21,J. Mulaut Limau Manis (Spg 238),0.0,0.0
-49_22,J. Mulaut Limau Manis (Spg Ban 4),0.0,0.0
-49_23,Hua Ho Mulaut,0.0,0.0
-49_24,J. Ban 3 Mulaut (Spg Ban 3-A),0.0,0.0
-49_25,J. Mulaut Limau Manis (Spg Bebatik Kilanas),0.0,0.0
-49_26,J. Tutong (Spg Ban 3),0.0,0.0
-49_27,J. Tutong (Spg Kg Kilanas-Bebatik),0.0,0.0
-49_28,J. Tutong (Spg 729),0.0,0.0
-49_29,J. Tutong (Opp Spg 993),0.0,0.0
-49_30,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
+49_20,J. Mulaut Limau Manis (Spg 238),0.0,0.0
+49_21,Hua Ho Mulaut,0.0,0.0
+49_22,J. Mulaut Limau Manis (Spg Bebatik Kilanas),0.0,0.0
+49_23,J. Tutong (Spg Kg Kilanas-Bebatik),0.0,0.0
+49_24,J. Tutong (Opp Spg 993),0.0,0.0
+49_25,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
+49_26,Taman Damuan,0.0,0.0
+49_27,J. RIPAS (Istana Nurul Iman),0.0,0.0
+49_28,J. RIPAS (Opp KUPUSB),0.0,0.0
+49_29,J. RIPAS (Mile 1 - Batu 1),0.0,0.0
+49_30,J. RIPAS - Sumbiling,0.0,0.0
+49_31,J. SOAS (Royal Regalia),0.0,0.0
 55_1,BSB Bus Terminal,0.0,0.0
 55_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
-55_3,J. Kianggeh (Terrace / Radisson),0.0,0.0
-55_4,J. Simpang (SOAS),0.0,0.0
-55_5,J. Simpang (SOAS),0.0,0.0
-55_6,J. Kumbang Pasang (STPRI),0.0,0.0
-55_7,J. Kumbang Pasang (STPRI),0.0,0.0
-55_8,J. Gadong (Riverview/Shell Gadong/NBT),0.0,0.0
-55_9,J. Gadong (Jerambak/Riverview),0.0,0.0
-55_10,J. Gadong (Nyonya Restaurant),0.0,0.0
-55_11,J. Gadong (NBT / Shell Menglait),0.0,0.0
-55_12,J. Gadong (Police HQ),0.0,0.0
-55_13,J. Gadong (Traffic Light Gadong),0.0,0.0
-55_14,J. Gadong (Supasave / JPD),0.0,0.0
-55_15,J. Gadong (Police HQ),0.0,0.0
-55_16,J. Gadong (Beribi Industry/BINA),0.0,0.0
-55_17,J. Gadong (Kompleks Warisan Mata2),0.0,0.0
-55_18,J. Gadong (Spg 456/471/502/540),0.0,0.0
-55_19,J. Gadong (S. Ugama Beribi),0.0,0.0
-55_20,J. Gadong (Opp. Sunshine Sch),0.0,0.0
-55_21,J. Gadong (Sunshine Sch.),0.0,0.0
-55_22,J. Gadong (Opp. Masjid Jubli Perak),0.0,0.0
-55_23,J. Gadong (Masjid Jubli Perak),0.0,0.0
-55_24,J. Gadong (Spg 884/Gerai Jangsak),0.0,0.0
+55_3,J. Simpang (SOAS),0.0,0.0
+55_4,J. Kumbang Pasang (STPRI),0.0,0.0
+55_5,J. Gadong (Riverview/Shell Gadong/NBT),0.0,0.0
+55_6,J. Gadong (Nyonya Restaurant),0.0,0.0
+55_7,J. Gadong (Police HQ),0.0,0.0
+55_8,J. Gadong (Supasave / JPD),0.0,0.0
+55_9,J. Gadong (Beribi Industry/BINA),0.0,0.0
+55_10,J. Gadong (Spg 456/471/502/540),0.0,0.0
+55_11,J. Gadong (Opp. Sunshine Sch),0.0,0.0
+55_12,J. Gadong (Opp. Masjid Jubli Perak),0.0,0.0
+55_13,J. Gadong (Spg 884/Gerai Jangsak),0.0,0.0
+55_14,J. Tutong (Spg to Ban 3 / 1244),0.0,0.0
+55_15,J. Tutong (Hua Ho Tg Bunut),0.0,0.0
+55_16,J. Tutong (Nusa Laila),0.0,0.0
+55_17,J. Tutong (SR Sengkurong),0.0,0.0
+55_18,J. Jerudong (Spg 7 / PWD / 166),0.0,0.0
+55_19,J. Jerudong (SR Bakti Dewa),0.0,0.0
+55_20,J. Jerudong (Jeruton / HSBC),0.0,0.0
+55_21,J. Jerudong (Park Garden),0.0,0.0
+55_22,Jerudong Park (Crystal),0.0,0.0
+55_23,J. Jerudong (Masjid Al Ameerah/H. Lodge),0.0,0.0
+55_24,J. Jerudong (Asma Hotel),0.0,0.0
 55_25,Pasar Jerudong (Market),0.0,0.0
 55_26,J. Jerudong (Asma Hotel),0.0,0.0
-55_27,J. Jerudong (Asma Hotel),0.0,0.0
-55_28,J. Jerudong (Holiday Lodge),0.0,0.0
-55_29,J. Jerudong (Masjid Al Ameerah/H. Lodge),0.0,0.0
-55_30,J. Jerudong (Masjid Al Ameerah),0.0,0.0
-55_31,Jerudong Park (Crystal),0.0,0.0
-55_32,Jerudong Park (Crystal),0.0,0.0
-55_33,J. Jerudong (Park Garden),0.0,0.0
-55_34,J. Jerudong (Jeruton / HSBC),0.0,0.0
-55_35,J. Jerudong (Spg 570 / Park Garden),0.0,0.0
-55_36,J. Jerudong (SR Bakti Dewa),0.0,0.0
-55_37,J. Jerudong (Opp. HSBC / Jeruton),0.0,0.0
-55_38,J. Jerudong (SR Bakti Dewa),0.0,0.0
-55_39,J. Jerudong (Spg 7 / PWD / 166),0.0,0.0
-55_40,J. Jerudong (Spg 166 / 100 / 60 / 8),0.0,0.0
-55_41,J. Tutong (SR Sengkurong),0.0,0.0
-55_42,J. Tutong (Hua Ho Sengkurong),0.0,0.0
-55_43,J. Tutong (Nusa Laila),0.0,0.0
-55_44,J. Tutong (Sengkurong Health Centre),0.0,0.0
-55_45,J. Tutong (Hua Ho Tg Bunut),0.0,0.0
-55_46,J. Tutong (Agriculture RC),0.0,0.0
-55_47,J. Tutong (Spg to Ban 3 / 1244),0.0,0.0
-55_48,J. Gadong (Opp Hua Ho Tg Bunut),0.0,0.0
+55_27,J. Jerudong (Holiday Lodge),0.0,0.0
+55_28,J. Jerudong (Masjid Al Ameerah),0.0,0.0
+55_29,Jerudong Park (Crystal),0.0,0.0
+55_30,J. Jerudong (Spg 570 / Park Garden),0.0,0.0
+55_31,J. Jerudong (Opp. HSBC / Jeruton),0.0,0.0
+55_32,J. Jerudong (SR Bakti Dewa),0.0,0.0
+55_33,J. Jerudong (Spg 166 / 100 / 60 / 8),0.0,0.0
+55_34,J. Tutong (Hua Ho Sengkurong),0.0,0.0
+55_35,J. Tutong (Sengkurong Health Centre),0.0,0.0
+55_36,J. Tutong (Agriculture RC),0.0,0.0
+55_37,J. Tutong (Opp Hua Ho Tg Bunut),0.0,0.0
+55_38,J. Gadong (Masjid Jubli Perak),0.0,0.0
+55_39,J. Gadong (Sunshine Sch.),0.0,0.0
+55_40,J. Gadong (S. Ugama Beribi),0.0,0.0
+55_41,J. Gadong (Kompleks Warisan Mata2),0.0,0.0
+55_42,J. Gadong (Police HQ),0.0,0.0
+55_43,J. Gadong (Traffic Light Gadong),0.0,0.0
+55_44,J. Gadong (NBT/ Shell Menglait),0.0,0.0
+55_45,J. Gadong (Jerambak/Riverview),0.0,0.0
+55_46,J. Kumbang Pasang (STPRI),0.0,0.0
+55_47,J. Simpang (SOAS),0.0,0.0
+55_48,J. Kianggeh (Terrace / Radisson),0.0,0.0
 56_1,BSB Bus Terminal,0.0,0.0
 56_2,J. SOAS (Royal Regalia),0.0,0.0
-56_3,J. SOAS (Royal Regalia),0.0,0.0
-56_4,Sumbiling (Fire & Rescue),0.0,0.0
-56_5,J. RIPAS (Mile 1-Batu 1),0.0,0.0
-56_6,J. RIPAS (Mahkamah (Court)),0.0,0.0
-56_7,J. RIPAS (Shell Tumasek/KUPUSB),0.0,0.0
-56_8,J. RIPAS (Sri Complex / KUPUSB),0.0,0.0
-56_9,J. RIPAS (Opp Taman Damuan),0.0,0.0
-56_10,J. RIPAS (Spg 153 / 237),0.0,0.0
-56_11,J. RIPAS (Opp Spg 444/285),0.0,0.0
-56_12,J. RIPAS (Istana Nurul Iman),0.0,0.0
-56_13,J. RIPAS (Chuchu Plaza),0.0,0.0
-56_14,Taman Damuan,0.0,0.0
-56_15,J. RIPAS (Spg 402),0.0,0.0
-56_16,J. Tutong (National Inn/Tmn Puri),0.0,0.0
-56_17,J. Tutong (Kg Telanai),0.0,0.0
-56_18,J. Tutong (Spg 774),0.0,0.0
-56_19,J. Tutong (Opp Tmn Puri/National Inn),0.0,0.0
-56_20,J. Tutong (Spg 728),0.0,0.0
-56_21,J. Tutong (Spg J. Hj Halus),0.0,0.0
+56_3,Sumbiling (Fire & Rescue),0.0,0.0
+56_4,J. RIPAS Mahkamah (Court),0.0,0.0
+56_5,J. RIPAS (Sri Complex / KUPUSB),0.0,0.0
+56_6,J. RIPAS (Spg 153 / 237),0.0,0.0
+56_7,J. RIPAS (Istana Nurul Iman),0.0,0.0
+56_8,Taman Damuan,0.0,0.0
+56_9,J. RIPAS (Spg 402),0.0,0.0
+56_10,J. Tutong (Kg Telanai),0.0,0.0
+56_11,J. Tutong (Opp Tmn Puri/National Inn),0.0,0.0
+56_12,J. Tutong (Spg J. Hj Halus),0.0,0.0
+56_13,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
+56_14,J. Tutong (Spg 729/735/759/779/803),0.0,0.0
+56_15,J. Tutong (Spg 993/1109/1023/Spg Ban 3),0.0,0.0
+56_16,J. Tutong (Hua Ho Tg Bunut),0.0,0.0
+56_17,J. Tutong (Opp Agriculture RC),0.0,0.0
+56_18,J. Tutong (SR Sengkurong),0.0,0.0
+56_19,J. Tutong (Shell SATENAGA/Spg 1737),0.0,0.0
+56_20,J. Katimahar (Masjid Kg Katimahar),0.0,0.0
+56_21,J. Katimahar (SR Katimahar),0.0,0.0
 56_22,Kg Lugu,0.0,0.0
 56_23,J. Katimahar (Kg Katimahar),0.0,0.0
-56_24,J. Katimahar (SR Katimahar),0.0,0.0
-56_25,J. Tutong (Shell SATENAGA),0.0,0.0
-56_26,J. Katimahar (Masjid Kg Katimahar),0.0,0.0
-56_27,J. Tutong (Sengkurong Library),0.0,0.0
-56_28,J. Tutong (Shell SATENAGA/Spg 1737),0.0,0.0
-56_29,J. Tutong (Hua Ho/Masjid Sengkurong),0.0,0.0
-56_30,J. Tutong (SR Sengkurong),0.0,0.0
-56_31,J. Tutong (Sengkurong Health Centre),0.0,0.0
-56_32,J. Tutong (Opp Agriculture RC),0.0,0.0
-56_33,J. Tutong (Agriculture RC),0.0,0.0
-56_34,J. Tutong (Hua Ho Tg Bunut),0.0,0.0
-56_35,J. Tutong (Opp Hua Ho Tg Bunut),0.0,0.0
-56_36,J. Tutong (Spg 993/1109/1023/Spg Ban 3),0.0,0.0
-56_37,J. Tutong (Opp Spg 993 / 1038),0.0,0.0
-56_38,J. Tutong (Spg 729/735/759/779/803),0.0,0.0
-56_39,J. Tutong (Spg 1116 / 1026),0.0,0.0
-56_40,J. Tutong (SR Bendahara Sakam Bunut),0.0,0.0
-56_41,J. Tutong (Spg J. Dadap),0.0,0.0
+56_24,J. Tutong (Shell SATENAGA),0.0,0.0
+56_25,J. Tutong (Sengkurong Library),0.0,0.0
+56_26,J. Tutong (Hua Ho/Masjid Sengkurong),0.0,0.0
+56_27,J. Tutong (Sengkurong Health Centre),0.0,0.0
+56_28,J. Tutong (Agriculture RC),0.0,0.0
+56_29,J. Tutong (Opp Hua Ho Tg Bunut),0.0,0.0
+56_30,J. Tutong (Opp Spg 993 / 1038),0.0,0.0
+56_31,J. Tutong (Spg 1116 / 1026),0.0,0.0
+56_32,J. Tutong (Spg J. Dadap),0.0,0.0
+56_33,J. Tutong (Spg 728),0.0,0.0
+56_34,J. Tutong (Spg 774),0.0,0.0
+56_35,J. Tutong (Opp SR Bendahara Sakam Bunut),0.0,0.0
+56_36,J. Tutong (National Inn/Tmn Puri),0.0,0.0
+56_37,J. RIPAS (Chuchu Plaza),0.0,0.0
+56_38,J. RIPAS (Opp Spg 444/285),0.0,0.0
+56_39,J. RIPAS (Opp Taman Damuan),0.0,0.0
+56_40,J. RIPAS (Shell Tumasek/KUPUSB),0.0,0.0
+56_41,J. RIPAS (Mile 1-Batu 1),0.0,0.0
+56_42,J. SOAS (Royal Regalia),0.0,0.0
 57_1,BSB Bus Terminal,0.0,0.0
 57_2,J. SOAS (Royal Regalia),0.0,0.0
-57_3,J. SOAS (Royal Regalia),0.0,0.0
-57_4,Sumbiling (Fire & Rescue),0.0,0.0
-57_5,J. RIPAS - Sumbiling,0.0,0.0
-57_6,J. RIPAS (Mahkamah (Court)),0.0,0.0
-57_7,J. RIPAS Via SHB Highway,0.0,0.0
-57_8,Kompleks Kiarong (Via SHB Highway),0.0,0.0
-57_9,Kompleks Kiarong,0.0,0.0
-57_10,J. Dato Ratna Kiarong (SR Kiarong),0.0,0.0
-57_11,J. Dato Ratna Kiarong (SR Kiarong),0.0,0.0
-57_12,J. Perindustrian Beribi (Sumbangsih & GHK),0.0,0.0
-57_13,J. Perindustrian Beribi,0.0,0.0
-57_14,J. Gadong (Beribi Industry/BINA),0.0,0.0
-57_15,J. Gadong (S. Ugama Beribi),0.0,0.0
-57_16,PTE Katok/Kg Katok B/Kg Mata-Mata,0.0,0.0
-57_17,Kg Mata2/Katok B/PTE Katok,0.0,0.0
-57_18,J. Tungku,0.0,0.0
+57_3,Sumbiling (Fire & Rescue),0.0,0.0
+57_4,J. RIPAS Mahkamah (Court),0.0,0.0
+57_5,Kompleks Kiarong (Via SHB Highway),0.0,0.0
+57_6,J. Dato Ratna Kiarong (SR Kiarong),0.0,0.0
+57_7,J. Perindustrian Beribi (Sumbangsih & GHK),0.0,0.0
+57_8,J. Gadong (Beribi Industry / BINA),0.0,0.0
+57_9,PTE Katok/Kg Katok B/Kg Mata-Mata,0.0,0.0
+57_10,J. Tungku,0.0,0.0
+57_11,J. Penghubung Rimba (Spg 82/51/Armada),0.0,0.0
+57_12,J. Penghubung Rimba (DeRimba),0.0,0.0
+57_13,RPN Kg Rimba (Gerai Aneka-SM Rimba 1),0.0,0.0
+57_14,RPN Kg Rimba (J. 60 / 2 / 99 / Giant),0.0,0.0
+57_15,RPN Kg Rimba (J. 3 - SR Rimba2),0.0,0.0
+57_16,UBD / ITB / JIS,0.0,0.0
+57_17,Bukit Shahbandar,0.0,0.0
+57_18,Empire Hotel,0.0,0.0
 57_19,Pasar Jerudong (Market),0.0,0.0
 57_20,Empire Hotel,0.0,0.0
-57_21,Empire Hotel,0.0,0.0
-57_22,Pantai Tungku,0.0,0.0
-57_23,Bukit Shahbandar,0.0,0.0
-57_24,JIS / UBD / ITB,0.0,0.0
-57_25,UBD / ITB / JIS,0.0,0.0
-57_26,RPN Kg Rimba (J. 3 - SR Rimba2),0.0,0.0
-57_27,RPN Kg Rimba (J. 3 - SR Rimba2),0.0,0.0
-57_28,RPN Kg Rimba (J. 99 / 2 / 60 / Giant),0.0,0.0
-57_29,RPN Kg Rimba (J. 60 / 2 / 99 / Giant),0.0,0.0
-57_30,RPN Kg Rimba (SM Rimba 1-Gerai Aneka),0.0,0.0
-57_31,RPN Kg Rimba (Gerai Aneka-SM Rimba 1),0.0,0.0
-57_32,J. Penghubung Rimba (DeRimba),0.0,0.0
-57_33,J. Penghubung Rimba (DeRimba),0.0,0.0
-57_34,J. Penghubung Rimba (Spg 51/Armada/82),0.0,0.0
-57_35,J. Penghubung Rimba (Spg 82/51/Armada),0.0,0.0
-57_36,J. Tungku,0.0,0.0
+57_21,Pantai Tungku,0.0,0.0
+57_22,JIS / UBD / ITB,0.0,0.0
+57_23,RPN Kg Rimba (J. 3 - SR Rimba2),0.0,0.0
+57_24,RPN Kg Rimba (J. 99 / 2 / 60 / Giant),0.0,0.0
+57_25,RPN Kg Rimba (SM Rimba 1-Gerai Aneka),0.0,0.0
+57_26,J. Penghubung Rimba (DeRimba),0.0,0.0
+57_27,J. Penghubung Rimba (Spg 51/Armada/82),0.0,0.0
+57_28,J. Tungku,0.0,0.0
+57_29,Kg Mata2/Katok B/PTE Katok,0.0,0.0
+57_30,J. Gadong (S. Ugama Beribi),0.0,0.0
+57_31,J. Perindustrian Beribi,0.0,0.0
+57_32,J. Dato Ratna Kiarong (SR Kiarong),0.0,0.0
+57_33,Kompleks Kiarong,0.0,0.0
+57_34,J. RIPAS Via SHB Highway,0.0,0.0
+57_35,J. RIPAS - Sumbiling,0.0,0.0
+57_36,J. SOAS (Royal Regalia),0.0,0.0
 58_1,BSB Bus Terminal,0.0,0.0
 58_2,J. Kianggeh (Terrace / Radisson),0.0,0.0
-58_3,J. Kianggeh (SM Chung Hwa),0.0,0.0
-58_4,J. Simpang (SOAS),0.0,0.0
-58_5,J. Kianggeh (Terrace / Radisson),0.0,0.0
-58_6,J. Kumbang Pasang (STPRI),0.0,0.0
-58_7,J. Simpang (SOAS),0.0,0.0
-58_8,J. Gadong (Riverview/Shell Gadong/NBT),0.0,0.0
-58_9,J. Kumbang Pasang (STPRI),0.0,0.0
-58_10,J. Gadong (Nyonya Restaurant),0.0,0.0
-58_11,J. Gadong (Jerambak / Riverview),0.0,0.0
-58_12,J. Tungku (Narcotic CB),0.0,0.0
-58_13,J. Gadong (K.Warisan Mata2/Traffic Lt Gadong/Shell Menglait),0.0,0.0
-58_14,J. Tungku,0.0,0.0
-58_15,J. Tungku,0.0,0.0
-58_16,J. Penghubung Rimba (Spg 82 / 51 / Armada),0.0,0.0
-58_17,J. Penghubung Rimba (Spg 51 / Armada / 82),0.0,0.0
-58_18,J. Penghubung Rimba (DeRimba),0.0,0.0
-58_19,J. Penghubung Rimba (DeRimba),0.0,0.0
+58_3,J. Simpang (SOAS),0.0,0.0
+58_4,J. Kumbang Pasang (STPRI),0.0,0.0
+58_5,J. Gadong (Riverview/Shell Gadong / NBT),0.0,0.0
+58_6,J. Gadong (Nyonya Restaurant),0.0,0.0
+58_7,J. Tungku (Narcotic CB),0.0,0.0
+58_8,J. Tungku,0.0,0.0
+58_9,J. Penghubung Rimba (Spg 82 / 51 / Armada),0.0,0.0
+58_10,J. Penghubung Rimba (DeRimba),0.0,0.0
+58_11,RPN Kg Rimba (Gerai Aneka/SM Rimba 1),0.0,0.0
+58_12,RPN Kg Rimba (Jln 60 / 2 / 99 / Giant),0.0,0.0
+58_13,RPN Kg Rimba (J. 3 - SR Rimba 2),0.0,0.0
+58_14,UBD Library,0.0,0.0
+58_15,ITB,0.0,0.0
+58_16,UBD (Core / Hostel),0.0,0.0
+58_17,JIS,0.0,0.0
+58_18,Bukit Shahbandar,0.0,0.0
+58_19,Empire Hotel,0.0,0.0
 58_20,Pasar Jerudong (Market),0.0,0.0
 58_21,Empire Hotel,0.0,0.0
-58_22,Empire Hotel,0.0,0.0
-58_23,Pantai Tungku,0.0,0.0
-58_24,Bukit Shahbandar,0.0,0.0
-58_25,JIS,0.0,0.0
-58_26,JIS,0.0,0.0
-58_27,UBD (Hostel / Core),0.0,0.0
-58_28,UBD (Core / Hostel),0.0,0.0
-58_29,ITB,0.0,0.0
-58_30,ITB,0.0,0.0
-58_31,UBD Library,0.0,0.0
-58_32,UBD Library,0.0,0.0
-58_33,RPN Kg Rimba (J. 3 - SR Rimba2),0.0,0.0
-58_34,RPN Kg Rimba (J. 3 - SR Rimba2),0.0,0.0
-58_35,RPN Kg Rimba (Jln 99 / 2 / 60 / Giant),0.0,0.0
-58_36,RPN Kg Rimba (Jln 60 / 2 / 99 / Giant),0.0,0.0
-58_37,RPN Kg Rimba (SM Rimba 1/Gerai Aneka),0.0,0.0
-58_38,RPN Kg Rimba (Gerai Aneka/SM Rimba 1),0.0,0.0
+58_22,Pantai Tungku,0.0,0.0
+58_23,JIS,0.0,0.0
+58_24,UBD (Hostel / Core),0.0,0.0
+58_25,ITB,0.0,0.0
+58_26,UBD Library,0.0,0.0
+58_27,RPN Kg Rimba (J. 3 - SR Rimba2),0.0,0.0
+58_28,RPN Kg Rimba (Jln 99 / 2 / 60 / Giant),0.0,0.0
+58_29,RPN Kg Rimba (SM Rimba 1/Gerai Aneka),0.0,0.0
+58_30,J. Penghubung Rimba (DeRimba),0.0,0.0
+58_31,J. Penghubung Rimba (Spg 51 / Armada / 82),0.0,0.0
+58_32,J. Tungku,0.0,0.0
+58_33,J. Gadong (K.Warisan Mata2/Traffic Lt Gadong/Shell Menglait),0.0,0.0
+58_34,J. Gadong (Jerambak / Riverview),0.0,0.0
+58_35,J. Kumbang Pasang (STPRI),0.0,0.0
+58_36,J. Simpang (SOAS),0.0,0.0
+58_37,J. Kianggeh (Terrace / Radisson),0.0,0.0
+58_38,J. Kianggeh (SM Chung Hwa),0.0,0.0
