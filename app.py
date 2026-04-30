@@ -888,8 +888,7 @@ with tab3:
                 layers=[nearby_layer, journey_layer, user_layer],
                 initial_view_state=view,
                 tooltip=tooltip,
-                map_provider="carto",
-                map_style="dark_matter",
+                map_style="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
             ),
             use_container_width=True,
         )
