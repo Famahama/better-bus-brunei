@@ -1,7 +1,7 @@
 route_id,route_short_name,route_long_name,route_type
 01A,01A,Mabohai-Airport Lama-Mall Gadong-Jame'Asr-RIPAS-Sumbiling,3
-01C,01C,Sumbiling-RIPAS-Jame'Asr-Mall Gadong-Airport Lama-Mabohai,3
 20,20,Kiulap Commercial-Jame' Asr-Mall Gadong-Batu Bersurat,3
+01C,01C,Sumbiling-RIPAS-Jame'Asr-Mall Gadong-Airport Lama-Mabohai,3
 21,21,Kiarong-Mata2-Kg. Tungku-IPA-Batu Bersurat-J. Gadong,3
 22,22,Tamu Gadong-UNISSA-J. Tungku-Rimba-ITB-UBD-JIS,3
 23,23,J. Kumbang Pasang-Airport-J. Psr. Berakas-RPN Lambak Kiri-Berakas Kem,3

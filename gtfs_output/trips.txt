@@ -1,42 +1,22 @@
 route_id,service_id,trip_id,trip_headsign
 01A,WEEKDAY,01A_Mabohai→Mall Gadong,Mabohai→Mall Gadong
-01C,WEEKDAY,01C_A,Sumbiling→Mall Gadong (A)
-01C,WEEKDAY,01C_B,Sumbiling→Mall Gadong (B)
-20,WEEKDAY,20_A,→Batu Bersurat (A)
-20,WEEKDAY,20_B,→Batu Bersurat (B)
-21,WEEKDAY,21_A,→Kg. Tungku (A)
-21,WEEKDAY,21_B,→Kg. Tungku (B)
-22,WEEKDAY,22_A,→Rimba / ITB / UBD / JIS (A)
-22,WEEKDAY,22_B,→Rimba / ITB / UBD / JIS (B)
-23,WEEKDAY,23_A,→RPN Lambak Kiri & Berakas Kem (A)
-23,WEEKDAY,23_B,→RPN Lambak Kiri & Berakas Kem (B)
-24,WEEKDAY,24_A,→RPN Lambak Kanan (A)
-24,WEEKDAY,24_B,→RPN Lambak Kanan (B)
-34,WEEKDAY,34_A,→Airport & Delima/Serusop (A)
-34,WEEKDAY,34_B,→Airport & Delima/Serusop (B)
-35,WEEKDAY,35_A,→Kg Sungai Akar (A)
-35,WEEKDAY,35_B,→Kg Sungai Akar (B)
-36,WEEKDAY,36_A,ICC/Stadium→Airport (A)
-36,WEEKDAY,36_B,ICC/Stadium→Airport (B)
-37,WEEKDAY,37_A,→Pekan Muara (A)
-37,WEEKDAY,37_B,→Pekan Muara (B)
-38,WEEKDAY,38_A,→Pekan Muara (A)
-38,WEEKDAY,38_B,→Pekan Muara (B)
-39,WEEKDAY,39_A,→Pekan Muara (A)
-39,WEEKDAY,39_B,→Pekan Muara (B)
-42,WEEKDAY,42_A,Kuala Lurah@Brunei→Limbang (A)
-42,WEEKDAY,42_B,Kuala Lurah@Brunei→Limbang (B)
-44,WEEKDAY,44_A,Kuala Lurah@Brunei→Limbang (A)
-44,WEEKDAY,44_B,Kuala Lurah@Brunei→Limbang (B)
-45,WEEKDAY,45_A,→Spg 525 Jalan Mulaut-Limau Manis (A)
-45,WEEKDAY,45_B,→Spg 525 Jalan Mulaut-Limau Manis (B)
-49,WEEKDAY,49_A,→Kg Bunut→Mulaut (A)
-49,WEEKDAY,49_B,→Kg Bunut→Mulaut (B)
-55,WEEKDAY,55_A,→Pasar Jerudong (Market) via Sengkurong/Jerudong (A)
-55,WEEKDAY,55_B,→Pasar Jerudong (Market) via Sengkurong/Jerudong (B)
-56,WEEKDAY,56_A,→Kg Lugu (A)
-56,WEEKDAY,56_B,→Kg Lugu (B)
-57,WEEKDAY,57_A,→Pasar Jerudong (Market) via Katok/Rimba/Empire (A)
-57,WEEKDAY,57_B,→Pasar Jerudong (Market) via Katok/Rimba/Empire (B)
-58,WEEKDAY,58_A,→Pasar Jerudong (Market) via Rimba/Empire (A)
-58,WEEKDAY,58_B,→Pasar Jerudong (Market) via Rimba/Empire (B)
+20,WEEKDAY,20_→Batu Bersurat,→Batu Bersurat
+01C,WEEKDAY,01C_Sumbiling→Mall Gadong,Sumbiling→Mall Gadong
+21,WEEKDAY,21_→Kg. Tungku,→Kg. Tungku
+22,WEEKDAY,22_→Rimba / ITB / UBD / JIS,→Rimba / ITB / UBD / JIS
+23,WEEKDAY,23_→RPN Lambak Kiri & Berakas Kem,→RPN Lambak Kiri & Berakas Kem
+24,WEEKDAY,24_→RPN Lambak Kanan,→RPN Lambak Kanan
+34,WEEKDAY,34_→Airport & Delima/Serusop,→Airport & Delima/Serusop
+35,WEEKDAY,35_→Kg Sungai Akar,→Kg Sungai Akar
+36,WEEKDAY,36_ICC/Stadium→Airport,ICC/Stadium→Airport
+37,WEEKDAY,37_→Pekan Muara,→Pekan Muara
+38,WEEKDAY,38_→Pekan Muara,→Pekan Muara
+39,WEEKDAY,39_→Pekan Muara,→Pekan Muara
+42,WEEKDAY,42_Kuala Lurah@Brunei→Limbang,Kuala Lurah@Brunei→Limbang
+44,WEEKDAY,44_Kuala Lurah@Brunei→Limbang,Kuala Lurah@Brunei→Limbang
+45,WEEKDAY,45_→Spg 525 Jalan Mulaut-Limau Manis,→Spg 525 Jalan Mulaut-Limau Manis
+49,WEEKDAY,49_→Kg Bunut→Mulaut,→Kg Bunut→Mulaut
+55,WEEKDAY,55_→Pasar Jerudong (Market) via Sengkurong/Jerudong,→Pasar Jerudong (Market) via Sengkurong/Jerudong
+56,WEEKDAY,56_→Kg Lugu,→Kg Lugu
+57,WEEKDAY,57_→Pasar Jerudong (Market) via Katok/Rimba/Empire,→Pasar Jerudong (Market) via Katok/Rimba/Empire
+58,WEEKDAY,58_→Pasar Jerudong (Market) via Rimba/Empire,→Pasar Jerudong (Market) via Rimba/Empire

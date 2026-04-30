@@ -90,7 +90,6 @@ div[data-baseweb="input"] > div {
     font-size: 0.85rem;
     letter-spacing: 1px;
     padding: 0.65rem 2rem;
-    width: 100%;
     transition: opacity 0.15s;
 }
 .stButton > button:hover { opacity: 0.85; }
@@ -196,8 +195,10 @@ div[data-baseweb="input"] > div {
     border-bottom: 1px solid var(--border);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .stop-item:last-child { border-bottom: none; }
+.stop-name-text { color: var(--text); font-size: 0.85rem; }
 .stop-num { color: var(--muted); font-family: 'Space Mono', monospace; font-size: 0.7rem; }
 
 /* Divider */
@@ -402,23 +403,36 @@ all_stops = get_all_stops()
 # ── UI ────────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="hero">
-  <h1>🚌 Bas Brunei</h1>
-  <p>Public bus route planner · Brunei-Muara & beyond</p>
+<h1>🚌 Better Bus Brunei</h1>
+<p>Public bus route planner · Brunei-Muara & beyond</p>
 </div>
 """, unsafe_allow_html=True)
+
+# ── Session state for swap ────────────────────────────────────────────────────
+_opts = ["— Select stop —"] + all_stops
+
+def swap_stops():
+    o = st.session_state.get("origin_sel", _opts[0])
+    d = st.session_state.get("dest_sel", _opts[0])
+    st.session_state["origin_sel"] = d
+    st.session_state["dest_sel"] = o
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
 tab1, tab2 = st.tabs(["🗺️ Plan a Journey", "📋 Browse Routes"])
 
 with tab1:
     st.markdown('<div class="section-label">Origin</div>', unsafe_allow_html=True)
-    origin = st.selectbox("", ["— Select origin stop —"] + all_stops, key="origin", label_visibility="collapsed")
+    origin = st.selectbox("", _opts, key="origin_sel", label_visibility="collapsed")
 
-    st.markdown('<div class="section-label" style="margin-top:1rem">Destination</div>', unsafe_allow_html=True)
-    dest = st.selectbox("", ["— Select destination stop —"] + all_stops, key="dest", label_visibility="collapsed")
+    col_swap, _ = st.columns([2, 6])
+    with col_swap:
+        st.button("⇅  Swap", on_click=swap_stops, use_container_width=True)
+
+    st.markdown('<div class="section-label">Destination</div>', unsafe_allow_html=True)
+    dest = st.selectbox("", _opts, key="dest_sel", label_visibility="collapsed")
 
     st.markdown("<br>", unsafe_allow_html=True)
-    search = st.button("FIND ROUTE →")
+    search = st.button("FIND ROUTE →", use_container_width=True)
 
     if search:
         if origin.startswith("—") or dest.startswith("—"):
@@ -431,63 +445,64 @@ with tab1:
             results = find_route(origin_clean, dest_clean)
 
             if not results:
-                st.markdown(f"""
-                <div class="result-card">
-                  <div class="no-route">
-                    No route found between<br>
-                    <strong>{origin}</strong> and <strong>{dest}</strong>.<br><br>
-                    <span style="font-size:0.75rem">Try nearby stops or check spelling.</span>
-                  </div>
-                </div>
-                """, unsafe_allow_html=True)
+                st.markdown(
+                    f'<div class="result-card"><div class="no-route">'
+                    f'No route found between<br>'
+                    f'<strong>{origin}</strong> and <strong>{dest}</strong>.<br><br>'
+                    f'<span style="font-size:0.75rem">Try nearby stops or check spelling.</span>'
+                    f'</div></div>',
+                    unsafe_allow_html=True,
+                )
             else:
                 for i, result in enumerate(results):
-                    legs = result["legs"]
-                    rtype = result["type"]
-                    label = "DIRECT ROUTE" if rtype == "direct" else "1 TRANSFER"
+                    legs  = result["legs"]
+                    label = "DIRECT ROUTE" if result["type"] == "direct" else "1 TRANSFER"
 
-                    html = f'<div class="result-card"><h3>Option {i+1} · {label}</h3>'
-
+                    # Build HTML without leading whitespace (prevents Markdown treating
+                    # indented lines as code blocks)
+                    parts = [f'<div class="result-card"><h3>Option {i+1} · {label}</h3>']
                     for j, leg in enumerate(legs):
                         total = leg["stops_count"]
-                        html += f"""
-                        <div class="step">
-                          <div class="step-num">{j+1}</div>
-                          <div class="step-body">
-                            <div class="step-title">
-                              <span class="route-badge">{leg['route']}</span>
-                              {leg['direction']}
-                            </div>
-                            <div class="step-sub">
-                              Board at <strong>{leg['board']}</strong> · Alight at <strong>{leg['alight']}</strong><br>
-                              {total} stop{'s' if total != 1 else ''} along the way
-                            </div>
-                          </div>
-                        </div>
-                        """
+                        noun  = "stop" if total == 1 else "stops"
+                        parts.append(
+                            f'<div class="step">'
+                            f'<div class="step-num">{j+1}</div>'
+                            f'<div class="step-body">'
+                            f'<div class="step-title">'
+                            f'<span class="route-badge">{leg["route"]}</span> {leg["direction"]}'
+                            f'</div>'
+                            f'<div class="step-sub">'
+                            f'Board at <strong>{leg["board"]}</strong> &middot; '
+                            f'Alight at <strong>{leg["alight"]}</strong><br>'
+                            f'{total} {noun} along the way'
+                            f'</div>'
+                            f'</div>'
+                            f'</div>'
+                        )
                         if j < len(legs) - 1:
-                            transfer_stop = legs[j+1]["board"]
-                            html += f"""
-                            <div style="margin-left:2rem; margin-bottom:0.75rem">
-                              <span class="transfer-tag">↔ TRANSFER AT {transfer_stop.upper()}</span>
-                            </div>
-                            """
-
-                    html += "</div>"
-                    st.markdown(html, unsafe_allow_html=True)
+                            xfer = legs[j + 1]["board"].upper()
+                            parts.append(
+                                f'<div style="margin-left:2rem;margin-bottom:0.75rem">'
+                                f'<span class="transfer-tag">&#8596; TRANSFER AT {xfer}</span>'
+                                f'</div>'
+                            )
+                    parts.append('</div>')
+                    st.markdown("".join(parts), unsafe_allow_html=True)
 
                     # Expandable stop list
                     for j, leg in enumerate(legs):
                         with st.expander(f"Show all stops · Leg {j+1} (Route {leg['route']})"):
-                            stop_html = '<div class="stop-list">'
-                            for s in leg["segment"]:
-                                stop_html += f"""
-                                <div class="stop-item">
-                                  <span>{s['stop_name']}</span>
-                                  <span class="stop-num">#{s['stop_seq']}</span>
-                                </div>"""
-                            stop_html += "</div>"
-                            st.markdown(stop_html, unsafe_allow_html=True)
+                            rows = "".join(
+                                f'<div class="stop-item">'
+                                f'<span class="stop-name-text">{s["stop_name"]}</span>'
+                                f'<span class="stop-num">#{s["stop_seq"]}</span>'
+                                f'</div>'
+                                for s in leg["segment"]
+                            )
+                            st.markdown(
+                                f'<div class="stop-list">{rows}</div>',
+                                unsafe_allow_html=True,
+                            )
 
 with tab2:
     st.markdown('<div class="section-label">Select Route</div>', unsafe_allow_html=True)
@@ -496,37 +511,40 @@ with tab2:
 
     if not selected_route.startswith("—"):
         route_df = df[df["route_short_name"] == selected_route].sort_values("stop_sequence")
-        direction = route_df.iloc[0]["trip_headsign"]
-        full_name = route_df.iloc[0]["route_long_name"]
+        direction  = route_df.iloc[0]["trip_headsign"]
+        full_name  = route_df.iloc[0]["route_long_name"]
         total_stops = len(route_df)
 
-        st.markdown(f"""
-        <div class="result-card">
-          <h3>Route {selected_route}</h3>
-          <div style="margin-bottom:0.5rem">
-            <span class="route-badge">{selected_route}</span>
-            <strong>{direction}</strong>
-          </div>
-          <div style="font-size:0.8rem; color:var(--muted); margin-bottom:1rem">{full_name}</div>
-          <div style="font-size:0.8rem; color:var(--muted)">{total_stops} stops total</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown(
+            f'<div class="result-card">'
+            f'<h3>Route {selected_route}</h3>'
+            f'<div style="margin-bottom:0.5rem">'
+            f'<span class="route-badge">{selected_route}</span>'
+            f'<strong style="color:var(--text)">{direction}</strong>'
+            f'</div>'
+            f'<div style="font-size:0.8rem;color:var(--muted);margin-bottom:1rem">{full_name}</div>'
+            f'<div style="font-size:0.8rem;color:var(--muted)">{total_stops} stops total</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
 
-        stop_html = '<div class="stop-list" style="margin-top:1rem">'
-        for _, row in route_df.iterrows():
-            stop_html += f"""
-            <div class="stop-item">
-              <span style="font-size:0.85rem">{row['stop_name']}</span>
-              <span class="stop-num">#{int(row['stop_sequence'])}</span>
-            </div>"""
-        stop_html += "</div>"
-        st.markdown(stop_html, unsafe_allow_html=True)
+        rows = "".join(
+            f'<div class="stop-item">'
+            f'<span class="stop-name-text">{row["stop_name"]}</span>'
+            f'<span class="stop-num">#{int(row["stop_sequence"])}</span>'
+            f'</div>'
+            for _, row in route_df.iterrows()
+        )
+        st.markdown(
+            f'<div class="stop-list" style="margin-top:1rem">{rows}</div>',
+            unsafe_allow_html=True,
+        )
 
 # ── Footer ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <hr>
 <div style="text-align:center; color:var(--muted); font-size:0.75rem; padding-bottom:2rem">
-  Data sourced from JPD Brunei · 21 routes · 676 stops (GTFS)<br>
-  <span style="font-family:'Space Mono',monospace">bas-brunei v0.1</span>
+Data sourced from JPD Brunei · 21 routes · 676 stops (GTFS)<br>
+<span style="font-family:'Space Mono',monospace">better-bus-brunei v0.2</span>
 </div>
 """, unsafe_allow_html=True)
