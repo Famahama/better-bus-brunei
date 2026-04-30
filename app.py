@@ -1,7 +1,10 @@
 import os
+import math
 import streamlit as st
 import pandas as pd
+import pydeck as pdk
 from collections import defaultdict, deque
+from streamlit_js_eval import get_geolocation
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -225,6 +228,49 @@ def load_data():
     return df
 
 df = load_data()
+
+# ── Map helpers ───────────────────────────────────────────────────────────────
+@st.cache_data
+def get_valid_stops() -> pd.DataFrame:
+    """Load stops with real coordinates (excludes 0,0 placeholders)."""
+    stops = pd.read_csv(os.path.join(GTFS_DIR, "stops.txt"))
+    valid = stops[(stops["stop_lat"] != 0.0) & (stops["stop_lon"] != 0.0)].copy()
+    return valid.reset_index(drop=True)
+
+
+def haversine_distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    """Return distance in kilometres between two (lat, lon) points."""
+    R = 6371.0
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlam = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlam / 2) ** 2
+    return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+
+def find_nearest_stops(user_lat: float, user_lon: float, n: int = 5) -> pd.DataFrame:
+    """Return up to n nearest valid stops, with a 'distance_km' column."""
+    stops = get_valid_stops()
+    if stops.empty:
+        return stops
+    stops = stops.copy()
+    stops["distance_km"] = stops.apply(
+        lambda r: haversine_distance(user_lat, user_lon, r["stop_lat"], r["stop_lon"]),
+        axis=1,
+    )
+    return stops.nsmallest(n, "distance_km").reset_index(drop=True)
+
+
+def get_user_location():
+    """
+    Try browser GPS via streamlit-js-eval.
+    Returns (lat, lon) floats or (None, None) if unavailable.
+    """
+    loc = get_geolocation()
+    if loc and "coords" in loc:
+        return loc["coords"]["latitude"], loc["coords"]["longitude"]
+    return None, None
+
 
 # ── Build graph for routing ───────────────────────────────────────────────────
 @st.cache_data
@@ -596,7 +642,7 @@ def swap_stops():
     st.session_state["dest_sel"] = o
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
-tab1, tab2 = st.tabs([t["tab_plan"], t["tab_browse"]])
+tab1, tab2, tab3 = st.tabs([t["tab_plan"], t["tab_browse"], "📍 Nearby & Map"])
 
 with tab1:
     st.markdown(f'<div class="section-label">{t["origin"]}</div>', unsafe_allow_html=True)
@@ -621,6 +667,7 @@ with tab1:
             origin_clean = origin.strip().lower()
             dest_clean   = dest.strip().lower()
             results = find_route(origin_clean, dest_clean)
+            st.session_state["_last_results"] = results
 
             if not results:
                 st.markdown(
@@ -717,6 +764,149 @@ with tab2:
             f'<div class="stop-list" style="margin-top:1rem">{rows}</div>',
             unsafe_allow_html=True,
         )
+
+with tab3:
+    st.markdown('<div class="section-label">Your Location</div>', unsafe_allow_html=True)
+
+    valid_stops = get_valid_stops()
+    if valid_stops.empty:
+        st.warning("No stops with valid coordinates found in the dataset.")
+    else:
+        # ── Attempt GPS, fall back to manual input ────────────────────────────
+        gps_lat, gps_lon = get_user_location()
+
+        if gps_lat is not None and gps_lon is not None:
+            st.success(f"GPS detected: {gps_lat:.5f}, {gps_lon:.5f}")
+            user_lat, user_lon = gps_lat, gps_lon
+            use_manual = False
+        else:
+            st.info("GPS not available. Enter your location manually.")
+            use_manual = True
+
+        if use_manual:
+            man_col1, man_col2 = st.columns(2)
+            with man_col1:
+                user_lat = st.number_input("Latitude", value=4.9404, format="%.6f", step=0.0001)
+            with man_col2:
+                user_lon = st.number_input("Longitude", value=114.9480, format="%.6f", step=0.0001)
+
+        # ── Journey stop context (from last search in tab1) ───────────────────
+        origin_name = st.session_state.get("origin_sel", "")
+        dest_name   = st.session_state.get("dest_sel", "")
+        select_placeholder = next(iter(TRANSLATIONS.values()))["select_stop"]
+
+        def coords_for_stop(name: str):
+            if not name or name.startswith("—"):
+                return None
+            row = valid_stops[valid_stops["stop_name"].str.strip() == name.strip()]
+            if row.empty:
+                return None
+            return float(row.iloc[0]["stop_lat"]), float(row.iloc[0]["stop_lon"])
+
+        origin_coords  = coords_for_stop(origin_name)
+        dest_coords    = coords_for_stop(dest_name)
+
+        # Transfer: first alight stop from last result (stored in session state)
+        transfer_coords = None
+        last_results = st.session_state.get("_last_results", [])
+        if last_results:
+            first = last_results[0]
+            if first.get("type") == "transfer" and len(first["legs"]) > 1:
+                xfer_name = first["legs"][0]["alight"]
+                transfer_coords = coords_for_stop(xfer_name)
+
+        # ── Build pydeck layers ───────────────────────────────────────────────
+        nearest = find_nearest_stops(user_lat, user_lon, n=5)
+
+        # Layer A – user location (blue, larger)
+        user_layer = pdk.Layer(
+            "ScatterplotLayer",
+            data=[{"lat": user_lat, "lon": user_lon, "name": "You are here"}],
+            get_position="[lon, lat]",
+            get_color=[30, 144, 255, 230],
+            get_radius=60,
+            radius_min_pixels=10,
+            radius_max_pixels=30,
+            pickable=True,
+        )
+
+        # Layer B – nearby stops (green)
+        nearby_layer = pdk.Layer(
+            "ScatterplotLayer",
+            data=nearest.rename(columns={"stop_lat": "lat", "stop_lon": "lon"}).to_dict("records"),
+            get_position="[lon, lat]",
+            get_color=[46, 204, 113, 210],
+            get_radius=40,
+            radius_min_pixels=7,
+            radius_max_pixels=20,
+            pickable=True,
+        )
+
+        # Layer C – journey stops
+        journey_points = []
+        if origin_coords:
+            journey_points.append({
+                "lat": origin_coords[0], "lon": origin_coords[1],
+                "name": f"Origin: {origin_name}",
+                "color": [245, 197, 24, 230],   # yellow
+            })
+        if transfer_coords:
+            journey_points.append({
+                "lat": transfer_coords[0], "lon": transfer_coords[1],
+                "name": f"Transfer: {last_results[0]['legs'][0]['alight']}",
+                "color": [230, 126, 34, 230],   # orange
+            })
+        if dest_coords:
+            journey_points.append({
+                "lat": dest_coords[0], "lon": dest_coords[1],
+                "name": f"Destination: {dest_name}",
+                "color": [231, 76, 60, 230],    # red
+            })
+
+        journey_layer = pdk.Layer(
+            "ScatterplotLayer",
+            data=journey_points,
+            get_position="[lon, lat]",
+            get_color="color",
+            get_radius=50,
+            radius_min_pixels=9,
+            radius_max_pixels=25,
+            pickable=True,
+        )
+
+        view = pdk.ViewState(
+            latitude=user_lat,
+            longitude=user_lon,
+            zoom=15,
+            pitch=0,
+        )
+
+        tooltip = {"html": "<b>{name}</b>", "style": {"color": "white", "backgroundColor": "#222"}}
+
+        st.pydeck_chart(
+            pdk.Deck(
+                layers=[nearby_layer, journey_layer, user_layer],
+                initial_view_state=view,
+                tooltip=tooltip,
+                map_provider="carto",
+                map_style="dark_matter",
+            ),
+            use_container_width=True,
+        )
+
+        # ── Nearest stops table ───────────────────────────────────────────────
+        if not nearest.empty:
+            st.markdown('<div class="section-label" style="margin-top:1.5rem">Nearest Bus Stops</div>', unsafe_allow_html=True)
+            rows = "".join(
+                f'<div class="stop-item">'
+                f'<span class="stop-name-text">{row["stop_name"]}</span>'
+                f'<span class="stop-num">{row["distance_km"]:.2f} km</span>'
+                f'</div>'
+                for _, row in nearest.iterrows()
+            )
+            st.markdown(f'<div class="stop-list">{rows}</div>', unsafe_allow_html=True)
+        else:
+            st.warning("Could not compute nearby stops.")
 
 # ── Footer ────────────────────────────────────────────────────────────────────
 st.markdown("""
