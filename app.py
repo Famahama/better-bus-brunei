@@ -400,6 +400,27 @@ def get_all_stops():
 
 all_stops = get_all_stops()
 
+# ── Route color mapping ───────────────────────────────────────────────────────
+ROUTE_COLORS: dict[str, str] = {
+    # Circle
+    "01A": "#5FD4CF", "01C": "#5FD4CF",
+    # Central Business
+    "20":  "#D6A85C",
+    # Northern
+    "21":  "#6EDC8C", "22": "#6EDC8C", "23": "#6EDC8C", "24": "#6EDC8C",
+    # Eastern
+    "33":  "#5C8FE6", "34": "#5C8FE6", "35": "#5C8FE6",
+    "36":  "#5C8FE6", "37": "#5C8FE6", "38": "#5C8FE6", "39": "#5C8FE6",
+    # Southern
+    "42":  "#9AA0A6", "43": "#9AA0A6", "44": "#9AA0A6", "45": "#9AA0A6",
+    "46":  "#9AA0A6", "47": "#9AA0A6", "48": "#9AA0A6", "49": "#9AA0A6",
+    # Western
+    "55":  "#E07AB3", "56": "#E07AB3", "57": "#E07AB3", "58": "#E07AB3",
+}
+
+def get_route_color(route: str) -> str:
+    return ROUTE_COLORS.get(str(route).strip(), "#F5C518")
+
 # ── Translations ──────────────────────────────────────────────────────────────
 TRANSLATIONS = {
     "English": {
@@ -625,7 +646,7 @@ with tab1:
                             f'<div class="step-num">{j+1}</div>'
                             f'<div class="step-body">'
                             f'<div class="step-title">'
-                            f'<span class="route-badge">{leg["route"]}</span> {leg["direction"]}'
+                            f'<span class="route-badge" style="background:{get_route_color(leg["route"])};color:#0D0D0D">{leg["route"]}</span> {leg["direction"]}'
                             f'</div>'
                             f'<div class="step-sub">'
                             f'{t["board_at"]} <strong>{leg["board"]}</strong> &middot; '
@@ -676,7 +697,7 @@ with tab2:
             f'<div class="result-card">'
             f'<h3>{t["route_label"]} {selected_route}</h3>'
             f'<div style="margin-bottom:0.5rem">'
-            f'<span class="route-badge">{selected_route}</span>'
+            f'<span class="route-badge" style="background:{get_route_color(selected_route)};color:#0D0D0D">{selected_route}</span>'
             f'<strong style="color:var(--text)">{direction}</strong>'
             f'</div>'
             f'<div style="font-size:0.8rem;color:var(--muted);margin-bottom:1rem">{full_name}</div>'
